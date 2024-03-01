@@ -1,20 +1,20 @@
 html,
 body {
   margin: 0;
-  padding: 10px 25px;
+  padding: 10px 50px;
   width: 100vw;
   height: 100vh;
   font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
     source-sans-pro, sans-serif;
-  font-weight: normal;
+  font-weight: 100;
 }
-.prompt {
-  &-title {
-  }
-  &-text {
-    user-select: all;
-  }
-  &-image {
-    height: 400px;
-  }
+.prompt-title {
+}
+.prompt-text {
+  user-select: all;
+  width: 75vw;
+  white-space: pre-line;
+}
+.prompt-image {
+  height: 400px;
 }

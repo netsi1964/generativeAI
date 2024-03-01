@@ -1,8 +1,9 @@
 // deno run --allow-all create-html.ts
-import { prompts, KnownServices } from "./config.ts";
+import { prompts, KnownServices, services } from "./config.ts";
 
 // Function to generate HTML content for each service
 async function generateServicePage(serviceName: KnownServices) {
+  const service = services.find((s) => s.service === serviceName);
   const promptsForService = prompts.filter(
     (prompt) =>
       prompt.files.filter((file) => file.service === serviceName).length > 0
@@ -35,9 +36,9 @@ async function generateServicePage(serviceName: KnownServices) {
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>${serviceName} Service</h1>
-    <p>Basic info about the ${serviceName} service.</p>
-    <h2>Examples</h2>
+    <h1>Service: <a href="${service.url}">${service.url}</a> - ${serviceName}</a></h1>
+    <p>Here are some example generated prompts from ${serviceName} service.</p>
+    <h2>Prompts</h2>
     ${imageHTML}
     <hr>
     <a href="/">🏠 home</a>
