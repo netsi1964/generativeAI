@@ -20,9 +20,9 @@ async function generateServicePage(serviceName: KnownServices) {
           <pre class="prompt-text">${prompt.prompt}</pre>
           <h3>Image</h3>
           <div class="prompt-image">
-          <img src="./images/${serviceName}/${file.url}" alt="${prompt.title}" height="200px" />
+          <img src="${file.url}" alt="${prompt.title}" height="200px" />
           </div>
-          <a href="./images/${serviceName}/${file.url}" target="_blank">Full size</a>
+          <a href="${file.url}" target="_blank">Full size</a>
           </div>
           `
       );
@@ -39,6 +39,8 @@ async function generateServicePage(serviceName: KnownServices) {
     <p>Basic info about the ${serviceName} service.</p>
     <h2>Examples</h2>
     ${imageHTML}
+    <hr>
+    <a href="/">🏠 home</a>
   </body>
   </html>
   `;
