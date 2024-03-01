@@ -21,7 +21,7 @@ async function generateServicePage(serviceName: KnownServices) {
           <pre class="prompt-text">${prompt.prompt}</pre>
           <h3>Image</h3>
           <div class="prompt-image">
-          <img src="${file.url}" alt="${prompt.title}" height="200px" />
+          <img src="${file.url}" alt="${prompt.title}" height="400px" />
           </div>
           <a href="${file.url}" target="_blank">Full size</a>
           </div>
@@ -36,7 +36,7 @@ async function generateServicePage(serviceName: KnownServices) {
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Service: <a href="${service.url}">${service.url}</a> - ${serviceName}</a></h1>
+    <h1>Service: <a href="${service?.url}">${serviceName}</a></h1>
     <p>Here are some example generated prompts from ${serviceName} service.</p>
     <h2>Prompts</h2>
     ${imageHTML}
