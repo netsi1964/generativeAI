@@ -50,7 +50,13 @@ export const prompts = [
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
-        url: "../images/app.leonardo.ai/a-thai-woman.jpg",
+        url: "../images/app.leonardo.ai/a-thai-woman_Leonardo_Vision_XL.jpg",
+        comments:
+          "<a href='https://cdn.leonardo.ai/users/9a453b8e-cb5a-4956-9cd1-7a989021ce3f/generations/2f7df3a5-385c-42c3-838e-0379df1691a6/Default_A_photorealistic_portrait_of_a_smiling_25yearold_thai_3.jpg' target='_blank'>More info</a>",
+      },
+      {
+        service: KnownServices.APP_LEONARDO_AI,
+        url: "../images/app.leonardo.ai/a-thai-woman-Character-portrait.jpg",
         comments:
           "<a href='https://cdn.leonardo.ai/users/9a453b8e-cb5a-4956-9cd1-7a989021ce3f/generations/2f7df3a5-385c-42c3-838e-0379df1691a6/Default_A_photorealistic_portrait_of_a_smiling_25yearold_thai_3.jpg' target='_blank'>More info</a>",
       },
