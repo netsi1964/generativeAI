@@ -43,6 +43,11 @@ async function generateServicePage(serviceName: KnownServices) {
   <body>
     <h1>Service: <a href="${service?.url}">${serviceName}</a></h1>
     <p>Here are some example generated prompts from ${serviceName} service.</p>
+    ${
+      service?.comments
+        ? `<blockquote class="service-comment">${service?.comments}</blockquote>`
+        : ""
+    }
     <h2>Prompts</h2>
     ${imageHTML}
     <hr>
@@ -51,7 +56,7 @@ async function generateServicePage(serviceName: KnownServices) {
   </html>
   `;
 
-  createTextFile(`${serviceName}_service.html`, servicePageContent);
+  createTextFile(`services/${serviceName}.html`, servicePageContent);
 }
 
 // Loop through known services and generate a page for each

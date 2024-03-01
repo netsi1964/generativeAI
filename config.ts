@@ -3,6 +3,7 @@ export enum KnownServices {
   "LEXICA_ART" = "lexica.art",
   "CLIPDROP_CO" = "clipdrop.co",
   "DALL_E_3" = "chat.openai.com",
+  "APP_LEONARDO_AI" = "app.leonardo.ai",
 }
 
 export const services = [
@@ -16,6 +17,16 @@ export const services = [
     url: "https://lexica.art/",
     comments: "",
   },
+  {
+    service: KnownServices.DALL_E_3,
+    url: "https://chat.openai.com",
+    comments: "",
+  },
+  {
+    service: KnownServices.APP_LEONARDO_AI,
+    url: "https://app.leonardo.a",
+    comments: "Allows for many different LLM models",
+  },
 ];
 
 export const prompts = [
@@ -26,16 +37,22 @@ export const prompts = [
     files: [
       {
         service: KnownServices.LEXICA_ART,
-        url: "./images/lexica.art/a-thai-woman.jpg",
+        url: "../images/lexica.art/a-thai-woman.jpg",
       },
       {
         service: KnownServices.CLIPDROP_CO,
-        url: "./images/clipdrop.co/a-thai-woman.png",
+        url: "../images/clipdrop.co/a-thai-woman.png",
       },
       {
         service: KnownServices.DALL_E_3,
-        url: "./images/dall_e_3/a-thai-woman.png.webp",
+        url: "../images/dall_e_3/a-thai-woman.webp",
         comments: "Prefixed with 'a 4 by 3 image:'",
+      },
+      {
+        service: KnownServices.APP_LEONARDO_AI,
+        url: "../images/app.leonardo.ai/a-thai-woman.jpg",
+        comments:
+          "<a href='https://cdn.leonardo.ai/users/9a453b8e-cb5a-4956-9cd1-7a989021ce3f/generations/2f7df3a5-385c-42c3-838e-0379df1691a6/Default_A_photorealistic_portrait_of_a_smiling_25yearold_thai_3.jpg' target='_blank'>More info</a>",
       },
     ],
   },
