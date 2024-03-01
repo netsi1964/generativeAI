@@ -19,6 +19,11 @@ async function generateServicePage(serviceName: KnownServices) {
           <div class="prompt">
           <h2 class="prompt-title">${prompt.title}</h2>
           <pre class="prompt-text">${prompt.prompt}</pre>
+          ${
+            file.comments
+              ? `<p class="prompt-comments">${file.comments}</p>`
+              : ""
+          }
           <h3>Image</h3>
           <div class="prompt-image">
           <img src="${file.url}" alt="${prompt.title}" height="400px" />

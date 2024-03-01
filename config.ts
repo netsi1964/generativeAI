@@ -2,6 +2,7 @@
 export enum KnownServices {
   "LEXICA_ART" = "lexica.art",
   "CLIPDROP_CO" = "clipdrop.co",
+  "DALL_E_3" = "chat.openai.com",
 }
 
 export const services = [
@@ -30,6 +31,11 @@ export const prompts = [
       {
         service: KnownServices.CLIPDROP_CO,
         url: "./images/clipdrop.co/a-thai-woman.png",
+      },
+      {
+        service: KnownServices.DALL_E_3,
+        url: "./images/dall_e_3/a-thai-woman.png.webp",
+        comments: "Prefixed with 'a 4 by 3 image:'",
       },
     ],
   },
