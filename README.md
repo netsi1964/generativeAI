@@ -6,4 +6,4 @@ Some examples of prompts and generated images using various services
 
 ## Prompts
 
-- [A thai woman](./a-thai-woman.md)
+- [A thai woman](./a-thai-woman.html)
