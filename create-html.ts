@@ -38,7 +38,7 @@ async function generateServicePage(serviceName: KnownServices) {
   <html>
   <head>
     <title>${serviceName}</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
     <h1>Service: <a href="${service?.url}">${serviceName}</a></h1>
