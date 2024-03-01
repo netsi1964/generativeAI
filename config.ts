@@ -5,6 +5,7 @@ export enum KnownServices {
   "DALL_E_3" = "chat.openai.com",
   "APP_LEONARDO_AI" = "app.leonardo.ai",
   "RUNWAYML_COM" = "runwayml.com",
+  "PLAYGROUND_COM" = "playground.com",
 }
 
 export const services = [
@@ -31,6 +32,10 @@ export const services = [
   {
     service: KnownServices.RUNWAYML_COM,
     url: "https://runwayml.com",
+  },
+  {
+    service: KnownServices.PLAYGROUND_COM,
+    url: "https://playground.com",
   },
 ];
 
@@ -68,6 +73,10 @@ export const prompts = [
       {
         service: KnownServices.RUNWAYML_COM,
         url: "../images/runwayml.com/a-thai-woman.jpg",
+      },
+      {
+        service: KnownServices.PLAYGROUND_COM,
+        url: "../images/playground.com/a-thai-woman.png",
       },
     ],
   },
