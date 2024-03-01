@@ -53,7 +53,7 @@ async function generateServicePage(
     <h2>Prompts</h2>
     ${imageHTML}
     <hr>
-    <a href="/">🏠 home</a>
+    <a href="/">🏠 home</a> - <a href="index.html">Services</a>
   </body>
   </html>
   `;
@@ -91,7 +91,7 @@ async function processServices() {
 processServices().then(async () => {
   indexHTML += `</ul>
     <hr>
-    <a href="/">🏠 home</a> - <a href="index.html">Services</a>
+    <a href="/">🏠 home</a>
       </body>
       </html>
     `;
