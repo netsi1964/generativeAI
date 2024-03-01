@@ -2,7 +2,9 @@
 import { prompts, KnownServices, services } from "./config.ts";
 
 // Function to generate HTML content for each service
-async function generateServicePage(serviceName: KnownServices) {
+async function generateServicePage(
+  serviceName: KnownServices
+): Promise<string> {
   const service = services.find((s) => s.service === serviceName);
   const promptsForService = prompts.filter(
     (prompt) =>
@@ -56,17 +58,54 @@ async function generateServicePage(serviceName: KnownServices) {
   </html>
   `;
 
-  createTextFile(`services/${serviceName}.html`, servicePageContent);
+  const fileName = `${serviceName}.html`;
+  const serviceFile = `services/${fileName}`;
+  await createTextFile(serviceFile, servicePageContent);
+  return fileName;
 }
 
-// Loop through known services and generate a page for each
-Object.values(KnownServices).forEach((service) => {
-  generateServicePage(service);
+let indexHTML = `
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>GenerativeAI Services</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <h1>Services</h1>
+    <ul>`;
+
+async function processServices() {
+  const promises = Object.values(KnownServices).map(async (service) => {
+    const filename = await generateServicePage(service);
+    return `<li><a href="${filename}">${service}</a></li>`;
+  });
+
+  // Wait for all promises to resolve
+  const listItems = await Promise.all(promises);
+  // Concatenate all generated list items into `indexHTML`
+  indexHTML += listItems.join("");
+}
+
+// Call the async function
+processServices().then(async () => {
+  indexHTML += `</ul>
+    <hr>
+        <a href="/">🏠 home</a>
+      </body>
+      </html>
+    `;
+  await createTextFile("services/index.html", indexHTML);
 });
 
 async function createTextFile(filePath: string, text: string) {
   try {
-    await Deno.writeTextFile(filePath, text);
+    try {
+      await Deno.remove(filePath);
+    } catch (error) {
+      console.error("Failed to remove file:", error);
+    }
+    await Deno.writeTextFile(filePath, text, { create: true });
     console.log(`File created at ${filePath}`);
   } catch (error) {
     console.error("Failed to create file:", error);
