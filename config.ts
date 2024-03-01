@@ -4,6 +4,7 @@ export enum KnownServices {
   "CLIPDROP_CO" = "clipdrop.co",
   "DALL_E_3" = "chat.openai.com",
   "APP_LEONARDO_AI" = "app.leonardo.ai",
+  "RUNWAYML_COM" = "runwayml.com",
 }
 
 export const services = [
@@ -24,8 +25,12 @@ export const services = [
   },
   {
     service: KnownServices.APP_LEONARDO_AI,
-    url: "https://app.leonardo.a",
+    url: "https://app.leonardo.ai",
     comments: "Allows for many different LLM models",
+  },
+  {
+    service: KnownServices.RUNWAYML_COM,
+    url: "https://runwayml.com",
   },
 ];
 
@@ -59,6 +64,10 @@ export const prompts = [
         url: "../images/app.leonardo.ai/a-thai-woman-Character-portrait.jpg",
         comments:
           "<a href='https://cdn.leonardo.ai/users/9a453b8e-cb5a-4956-9cd1-7a989021ce3f/generations/2f7df3a5-385c-42c3-838e-0379df1691a6/Default_A_photorealistic_portrait_of_a_smiling_25yearold_thai_3.jpg' target='_blank'>More info</a>",
+      },
+      {
+        service: KnownServices.RUNWAYML_COM,
+        url: "../images/runwayml.com/a-thai-woman.jpg",
       },
     ],
   },

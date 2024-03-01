@@ -91,7 +91,7 @@ async function processServices() {
 processServices().then(async () => {
   indexHTML += `</ul>
     <hr>
-        <a href="/">🏠 home</a>
+    <a href="/">🏠 home</a> - <a href="index.html">Services</a>
       </body>
       </html>
     `;
