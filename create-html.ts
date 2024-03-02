@@ -43,7 +43,9 @@ async function generateServicePage(
     <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <h1>Service: <a href="${service?.url}">${serviceName}</a></h1>
+    <h2><a href="/">🏠 home</a> &gt; <a href="index.html">Services</a> &gt; <a href="${
+      service?.url
+    }">${serviceName}</a>🔗</h2>
     <p>Here are some example generated prompts from ${serviceName} service.</p>
     ${
       service?.comments
