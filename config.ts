@@ -6,6 +6,7 @@ export enum KnownServices {
   "APP_LEONARDO_AI" = "app.leonardo.ai",
   "RUNWAYML_COM" = "runwayml.com",
   "PLAYGROUND_COM" = "playground.com",
+  "MIDJOURNEY" = "midjourney",
 }
 
 export const services = [
@@ -36,6 +37,11 @@ export const services = [
   {
     service: KnownServices.PLAYGROUND_COM,
     url: "https://playground.com",
+  },
+  {
+    service: KnownServices.MIDJOURNEY,
+    url: "https://www.midjourney.com",
+    comments: "Feburary 2024 use Discord to generate images",
   },
 ];
 
@@ -77,6 +83,10 @@ export const prompts = [
       {
         service: KnownServices.PLAYGROUND_COM,
         url: "../images/playground.com/a-thai-woman.png",
+      },
+      {
+        service: KnownServices.MIDJOURNEY,
+        url: "../images/midjourney/a-thai-woman.jpg",
       },
     ],
   },
