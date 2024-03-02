@@ -43,7 +43,7 @@ async function generateServicePage(
     <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <h2><a href="/">🏠 home</a> &gt; <a href="index.html">Services</a> &gt; <a href="${
+    <h2><a href="/generativeAI">🏠 home</a> &gt; <a href="index.html">Services</a> &gt; <a href="${
       service?.url
     }">${serviceName}</a>🔗</h2>
     <p>Here are some example generated prompts from ${serviceName} service.</p>
@@ -56,7 +56,7 @@ async function generateServicePage(
     ${imageHTML}
     </div>
     <hr>
-    <a href="/">🏠 home</a> - <a href="index.html">Services</a>
+    <a href="/generativeAI">🏠 home</a> - <a href="index.html">Services</a>
   </body>
   </html>
   `;
@@ -94,7 +94,7 @@ async function processServices() {
 processServices().then(async () => {
   indexHTML += `</ul>
     <hr>
-    <a href="/">🏠 home</a>
+    <a href="/generativeAI">🏠 home</a>
       </body>
       </html>
     `;
