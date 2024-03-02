@@ -26,11 +26,11 @@ async function generateServicePage(
               ? `<p class="prompt-comments">${file.comments}</p>`
               : ""
           }
-          <h3>Image</h3>
           <div class="prompt-image">
-          <img src="${file.url}" alt="${prompt.title}" height="400px" />
+          <a href="${file.url}" target="_blank"><img src="${file.url}" alt="${
+            prompt.title
+          }" height="400px" /></a>
           </div>
-          <a href="${file.url}" target="_blank">Full size</a>
           </div>
           `
       );
@@ -50,8 +50,9 @@ async function generateServicePage(
         ? `<blockquote class="service-comment">${service?.comments}</blockquote>`
         : ""
     }
-    <h2>Prompts</h2>
+    <div class="prompts">
     ${imageHTML}
+    </div>
     <hr>
     <a href="/">🏠 home</a> - <a href="index.html">Services</a>
   </body>

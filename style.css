@@ -1,3 +1,6 @@
+:root {
+  --spacer: 4px;
+}
 html,
 body {
   margin: 0;
@@ -8,16 +11,48 @@ body {
     source-sans-pro, sans-serif;
   font-weight: 100;
 }
-.prompt-title {
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 100;
 }
+
+.prompt {
+  display: flex;
+  align-items: center;
+  max-width: 40vw;
+  gap: var(--spacer);
+  box-shadow: 0 0 10px #aaa;
+  border-radius: calc(2 * var(--spacer));
+  padding: 0 calc(var(--spacer) * 4) calc(var(--spacer) * 8);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.prompts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .prompt-text {
-  user-select: all;
-  width: 75vw;
-  white-space: pre-line;
+  background: #eee;
+  padding: calc(var(--spacer) * 4);
+  white-space: wrap !important;
+  max-width: 80%;
+  border-radius: calc(2 * var(--spacer));
 }
+
 .prompt-image {
-  height: 400px;
+  width: 90%;
+  & img {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover;
+  }
 }
+
 .prompt-comment {
   font-style: italic;
 }

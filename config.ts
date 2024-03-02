@@ -141,15 +141,10 @@ export const prompts = [
       {
         service: KnownServices.DALL_E_3,
         url: "../images/dall_e_3/The Awakening of an Ancient Forest.webp",
-        comments: "Prefixed with 'a 4 by 3 image:'",
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
-        url: "../images/app.leonardo.ai/The Awakening of an Ancient Forest_Leonardo_Vision_XL.jpg",
-      },
-      {
-        service: KnownServices.APP_LEONARDO_AI,
-        url: "../images/app.leonardo.ai/The Awakening of an Ancient Forest-Character-portrait.jpg",
+        url: "../images/app.leonardo.ai/The Awakening of an Ancient Forest.jpg",
       },
       {
         service: KnownServices.RUNWAYML_COM,
@@ -185,7 +180,7 @@ export const prompts = [
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
-        url: "../images/app.leonardo.ai/The Melancholy of a Rainy Parisian Street_Leonardo_Vision_XL.jpg",
+        url: "../images/app.leonardo.ai/The Melancholy of a Rainy Parisian Street_alcamy_upscaler.jpg",
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
@@ -225,7 +220,7 @@ export const prompts = [
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
-        url: "../images/app.leonardo.ai/Family Vacation Bliss in Thailand_Leonardo_Vision_XL.jpg",
+        url: "../images/app.leonardo.ai/Family Vacation Bliss in Thailand.jpg",
       },
       {
         service: KnownServices.RUNWAYML_COM,
