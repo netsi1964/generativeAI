@@ -33,7 +33,8 @@ async function generateServicePage(
           </div>
           </div>
           `
-      );
+      )
+      .join("");
   });
   const servicePageContent = `
   <!DOCTYPE html>

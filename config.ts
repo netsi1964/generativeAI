@@ -176,7 +176,6 @@ export const prompts = [
       {
         service: KnownServices.DALL_E_3,
         url: "../images/dall_e_3/The Melancholy of a Rainy Parisian Street.webp",
-        comments: "Prefixed with 'a 4 by 3 image:'",
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
@@ -216,7 +215,6 @@ export const prompts = [
       {
         service: KnownServices.DALL_E_3,
         url: "../images/dall_e_3/Family Vacation Bliss in Thailand.webp",
-        comments: "Prefixed with 'a 4 by 3 image:'",
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
