@@ -84,7 +84,9 @@ async function createIndexPage(filenames: string[]) {
   `;
 
   filenames.forEach((filename) => {
-    indexHTML += `<li><a href="${filename}">${filename}</a></li>`;
+    indexHTML += `<li><a href="${filename}">${
+      filename.split(".html")[0]
+    }</a></li>`;
   });
 
   indexHTML += `

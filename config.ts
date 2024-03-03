@@ -234,4 +234,39 @@ export const prompts = [
       },
     ],
   },
+  {
+    title: "80s-Inspired 'Be Happy' Sticker with Thumbs-Up",
+    prompt:
+      'Create a vibrant and colorful sticker design that embodies the aesthetic of the 1980s. The sticker should feature bold and bright colors, typical of the era. At the center of the design, include a large, cartoonish thumbs-up symbol, exuding positivity and enthusiasm. Overlay the image with the text: "Don\'t worry, be happy" in a font style that echoes the cheerful and carefree vibe of the 1980s. The text should be playful and lively, possibly with a neon or glowing effect to emphasize its upbeat message. The overall composition should evoke a sense of joy and nostalgia for the 1980s, making it look like an authentic piece of memorabilia from the decade.',
+    files: [
+      {
+        service: "LEXICA_ART",
+        url: "../images/lexica.art/80s-Inspired Be Happy Sticker with Thumbs-Up.jpg",
+      },
+      {
+        service: "CLIPDROP_CO",
+        url: "../images/clipdrop.co/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+      },
+      {
+        service: "DALL_E_3",
+        url: "../images/dall_e_3/80s-Inspired Be Happy Sticker with Thumbs-Up.webp",
+      },
+      {
+        service: "APP_LEONARDO_AI",
+        url: "../images/app.leonardo.ai/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+      },
+      {
+        service: "RUNWAYML_COM",
+        url: "../images/runwayml.com/80s-Inspired Be Happy Sticker with Thumbs-Up.jpg",
+      },
+      {
+        service: "PLAYGROUND_COM",
+        url: "../images/playground.com/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+      },
+      {
+        service: "MIDJOURNEY",
+        url: "../images/midjourney/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+      },
+    ],
+  },
 ];
