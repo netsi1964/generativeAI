@@ -12,7 +12,7 @@ async function generateHTMLContent(
     fileHTML += `
       <div class="prompt">
         <h2 class="prompt-title">
-          <a href="services/${file.service}.html">${file.service}</a>
+          <a href="../services/${file.service}.html">${file.service}</a>
         </h2>
         <div class="prompt-image">
           <a href="${file.url}" target="_blank"><img src="${
