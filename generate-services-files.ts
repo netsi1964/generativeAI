@@ -1,5 +1,6 @@
-// deno run --allow-all create-html.ts
+// deno run --allow-all generate-services-files.ts
 import { prompts, KnownServices, services } from "./config.ts";
+import { createTextFile } from "./utils.ts";
 
 // Function to generate HTML content for each service
 async function generateServicePage(
@@ -101,36 +102,3 @@ processServices().then(async () => {
     `;
   await createTextFile("services/index.html", indexHTML);
 });
-
-async function createTextFile(filePath: string, text: string) {
-  try {
-    try {
-      await Deno.remove(filePath);
-    } catch (error) {
-      console.error("Failed to remove file:", error);
-    }
-    await Deno.writeTextFile(filePath, text, { create: true });
-    console.log(`File created at ${filePath}`);
-  } catch (error) {
-    console.error("Failed to create file:", error);
-  }
-}
-
-async function listFilesInServiceFolder(
-  serviceName: string
-): Promise<string[]> {
-  const directoryPath = `./images/${serviceName}`;
-
-  try {
-    const entries = [];
-    for await (const entry of Deno.readDir(directoryPath)) {
-      if (entry.isFile) {
-        entries.push(entry.name);
-      }
-    }
-    return entries;
-  } catch (error) {
-    console.error("Failed to read directory:", error);
-    return []; // Return an empty array in case of error
-  }
-}
