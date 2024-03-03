@@ -31,12 +31,12 @@ async function generateHTMLContent(
   <html>
     <head>
       <title>Prompt: ${promptTitle}</title>
-      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="../style.css" />
     </head>
     <body>
       <h2>
         <a href="/generativeAI">🏠 home</a> &gt;
-        <a href="services/index.html">Services</a>
+        <a href="index.html">Generated images</a>
       </h2>
       <h2 class="prompt-title">${promptTitle}</h2>
       <pre class="prompt-text">${promptText}</pre>
@@ -75,11 +75,11 @@ async function createIndexPage(filenames: string[]) {
   <!DOCTYPE html>
     <html>
       <head>
-        <title>GenerativeAI Services</title>
+        <title>Generated images</title>
         <link rel="stylesheet" href="../style.css">
       </head>
       <body>
-        <h1>Services</h1>
+        <h1>Generated images</h1>
         <ul>
   `;
 
@@ -95,7 +95,7 @@ async function createIndexPage(filenames: string[]) {
     </html>
   `;
 
-  await createTextFile("services/index.html", indexHTML);
+  await createTextFile("prompts/index.html", indexHTML);
 }
 
 async function main() {
