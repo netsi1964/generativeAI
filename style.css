@@ -42,6 +42,7 @@ h4 {
   white-space: wrap !important;
   max-width: 80%;
   border-radius: calc(2 * var(--spacer));
+  user-select: all;
 }
 
 .prompt-image {
