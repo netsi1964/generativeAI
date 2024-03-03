@@ -253,7 +253,7 @@ export const prompts = [
       },
       {
         service: "APP_LEONARDO_AI",
-        url: "../images/app.leonardo.ai/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+        url: "../images/app.leonardo.ai/80s-Inspired Be Happy Sticker with Thumbs-Up.jpg",
       },
       {
         service: "RUNWAYML_COM",
