@@ -1,7 +1,7 @@
+// Function to execute the Deno script
 async function executeDenoScript(scriptPath: string) {
-  const cmd = ["deno", "run", "--allow-read", "--allow-write", scriptPath];
   const process = Deno.run({
-    cmd: cmd,
+    cmd: ["deno", "run", "--allow-read", "--allow-write", scriptPath],
     stdout: "piped",
     stderr: "piped",
   });
@@ -19,11 +19,20 @@ async function executeDenoScript(scriptPath: string) {
   process.close(); // Don't forget to close the process
 }
 
+// Execute the Deno scripts in sequence
 async function main() {
-  await executeDenoScript("generate-prompt-files.ts");
-  await executeDenoScript("generate-services-files.ts");
-  await executeDenoScript("generate-rss.ts");
-  await executeDenoScript("generate-index.ts");
+  const scriptPaths = [
+    "generate-prompt-files.ts",
+    "generate-services-files.ts",
+    "generate-rss.ts",
+    "generate-index.ts",
+  ];
+
+  // Execute the scripts sequentially
+  for (const scriptPath of scriptPaths) {
+    await executeDenoScript(scriptPath);
+  }
 }
 
+// Call the main function to start the execution
 main();
