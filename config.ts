@@ -303,4 +303,40 @@ export const prompts = [
       },
     ],
   },
+  {
+    title:
+      "A sketch of a woman standing on a cliff looking at the sea in a fancy art style",
+    prompt:
+      "A sketch of a woman standing on a cliff looking at the sea in a fancy art style",
+    files: [
+      {
+        service: "LEXICA_ART",
+        url: "../images/lexica.art/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..jpg",
+      },
+      {
+        service: "CLIPDROP_CO",
+        url: "../images/clipdrop.co/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
+      },
+      {
+        service: "DALL_E_3",
+        url: "../images/dall_e_3/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..webp",
+      },
+      {
+        service: "APP_LEONARDO_AI",
+        url: "../images/app.leonardo.ai/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..jpg",
+      },
+      {
+        service: "RUNWAYML_COM",
+        url: "../images/runwayml.com/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..jpg",
+      },
+      {
+        service: "PLAYGROUND_COM",
+        url: "../images/playground.com/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
+      },
+      {
+        service: "MIDJOURNEY",
+        url: "../images/midjourney/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
+      },
+    ],
+  },
 ];
