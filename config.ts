@@ -269,4 +269,38 @@ export const prompts = [
       },
     ],
   },
+  {
+    title: "A photograph of a vulture",
+    prompt: "A photograph of a vulture",
+    files: [
+      {
+        service: "LEXICA_ART",
+        url: "../images/lexica.art/A photograph of a vulture.jpg",
+      },
+      {
+        service: "CLIPDROP_CO",
+        url: "../images/clipdrop.co/A photograph of a vulture.png",
+      },
+      {
+        service: "DALL_E_3",
+        url: "../images/dall_e_3/A photograph of a vulture.webp",
+      },
+      {
+        service: "APP_LEONARDO_AI",
+        url: "../images/app.leonardo.ai/A photograph of a vulture.jpg",
+      },
+      {
+        service: "RUNWAYML_COM",
+        url: "../images/runwayml.com/A photograph of a vulture.jpg",
+      },
+      {
+        service: "PLAYGROUND_COM",
+        url: "../images/playground.com/A photograph of a vulture.png",
+      },
+      {
+        service: "MIDJOURNEY",
+        url: "../images/midjourney/A photograph of a vulture.png",
+      },
+    ],
+  },
 ];
