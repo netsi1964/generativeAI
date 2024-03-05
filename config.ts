@@ -339,4 +339,39 @@ export const prompts = [
       },
     ],
   },
+  {
+    title: "Hopeful Gaze in Coffee Tones",
+    prompt:
+      "Create a duotone image with a 'coffee' color tone. The subject is a young woman, her gaze uplifted in a hopeful expression. Her features are bathed in a soft light that casts gentle shadows across her face. She wears a flowing dress, with a hand delicately holding a dandelion ready to blow in the wind. The style is a charcoal sketch, rich in textures, blending realism with a touch of whimsy. The background should be simple, focusing attention on the woman and the dandelion",
+    files: [
+      {
+        service: KnownServices.LEXICA_ART,
+        url: "../images/lexica.art/Hopeful Gaze in Coffee Tones.jpg",
+      },
+      {
+        service: KnownServices.CLIPDROP_CO,
+        url: "../images/clipdrop.co/Hopeful Gaze in Coffee Tones.png",
+      },
+      {
+        service: KnownServices.DALL_E_3,
+        url: "../images/dall_e_3/Hopeful Gaze in Coffee Tones.webp",
+      },
+      {
+        service: KnownServices.APP_LEONARDO_AI,
+        url: "../images/app.leonardo.ai/Hopeful Gaze in Coffee Tones.jpg",
+      },
+      {
+        service: KnownServices.RUNWAYML_COM,
+        url: "../images/runwayml.com/Hopeful Gaze in Coffee Tones.jpg",
+      },
+      {
+        service: KnownServices.PLAYGROUND_COM,
+        url: "../images/playground.com/Hopeful Gaze in Coffee Tones.png",
+      },
+      {
+        service: KnownServices.MIDJOURNEY,
+        url: "../images/midjourney/Hopeful Gaze in Coffee Tones.png",
+      },
+    ],
+  },
 ];
