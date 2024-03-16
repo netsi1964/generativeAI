@@ -91,6 +91,7 @@ async function createIndexPage(filenames: string[]) {
 
   indexHTML += `
         </ul>
+        <h2><a href="tips.html">Some shared prompt techniques</a></h2>
         <hr>
         <a href="/generativeAI">🏠 home</a>
       </body>
