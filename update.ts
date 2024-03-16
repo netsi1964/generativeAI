@@ -1,4 +1,4 @@
-// Function to execute the Deno script
+// deno run --allow-all update.ts
 async function executeDenoScript(scriptPath: string) {
   const process = Deno.run({
     cmd: ["deno", "run", "--allow-read", "--allow-write", scriptPath],

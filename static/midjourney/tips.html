@@ -14,20 +14,15 @@
   generation using <code>--sw [0-100]</code>
 </p>
 
+<h3>Examples using <code>--sref</code> and <code>--sw</code></h3>
+<pre>
+  Nyhavn, Denmark --sref https://s.mj.run/e-7u7IcHpOA
+</pre>
+
 <table>
   <tr>
-    <th>Style image</th>
-    <th><code>sw</code> default</th>
-    <th><code>sw</code> 10</th>
-  </tr>
-  <tr>
     <td>
-      <img
-        src="https://s.mj.run/e-7u7IcHpOA"
-        style="height: 350px"
-        alt=""
-      /><br />
-      Peder Mørk Mønsted 1859-1941, Danish painter
+      <img src="https://s.mj.run/e-7u7IcHpOA" style="height: 350px" alt="" />
     </td>
     <td>
       <img
@@ -35,11 +30,6 @@
         style="height: 350px"
         alt=""
       />
-      <p>
-        Prompt<br /><code
-          >Nyhavn, Denmark --sref https://s.mj.run/e-7u7IcHpOA</code
-        >
-      </p>
     </td>
     <td>
       <img
@@ -47,11 +37,57 @@
         style="height: 350px"
         alt=""
       />
-      <p>
-        Prompt<br /><code
-          >Nyhavn, Denmark --sref https://s.mj.run/e-7u7IcHpOA --sw 10</code
-        >
-      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mark>Original painting</mark>
+      Peder Mørk Mønsted 1859-1941, Danish painter
+    </td>
+    <td>
+      <code>--sw not specified</code>
+    </td>
+    <td>
+      <code>--sw 10</code>
+    </td>
+  </tr>
+</table>
+
+<pre>
+  A close up where you see a beautiful thai woman visiting the city of Viborg,
+  Denmark. She is standing in front of the SLDR camera and smiling --sref
+  https://s.mj.run/e-7u7IcHpOA
+</pre>
+<table>
+  <tr>
+    <td>
+      <img
+        src="https://cdn.discordapp.com/attachments/1124616484640010260/1218507584450072646/netsi1964_A_close_up_where_you_see_a_beautiful_thai_woman_visit_e4ee559f-acc5-44ca-b346-796e1cf19119.png?ex=6607ea9e&is=65f5759e&hm=e783457463cea25bd78602b02949493637da118f2c93d1ea048e0e7184f104f8&"
+        alt=""
+      />
+    </td>
+    <td>
+      <img
+        src="https://cdn.discordapp.com/attachments/1124616484640010260/1218507925254045737/netsi1964_A_close_up_where_you_see_a_beautiful_thai_woman_visit_0b94b5f8-a66f-416c-8d5b-6352c0559702.png?ex=6607eaf0&is=65f575f0&hm=708693022a4c59647780f38ca51937a18e15fc876153e459e7c05576e0cd95cc&"
+        alt=""
+      />
+    </td>
+    <td>
+      <img
+        src="https://cdn.discordapp.com/attachments/1124616484640010260/1218507748191506432/netsi1964_A_close_up_where_you_see_a_beautiful_thai_woman_visit_8e70f260-73a6-437f-bcdc-3d975acbb51c.png?ex=6607eac5&is=65f575c5&hm=7fa41c695018bdaa9795eed505089661f24bd5a168933ee242d123d81317a6eb&"
+        alt=""
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>--sw 0</code>
+    </td>
+    <td>
+      <code>--sw 50</code>
+    </td>
+    <td>
+      <code>--sw 100</code>
     </td>
   </tr>
 </table>

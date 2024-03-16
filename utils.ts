@@ -52,6 +52,5 @@ export async function getTips(serviceName: KnownServices) {
     }
   }
   tips = tips !== "" ? `<h3>Tips</h3>${tips}` : "";
-  console.log(tips);
   return tips;
 }
