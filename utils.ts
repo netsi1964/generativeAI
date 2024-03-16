@@ -1,3 +1,5 @@
+import { KnownServices } from "./config.ts";
+
 export async function createTextFile(filePath: string, text: string) {
   try {
     try {
@@ -29,4 +31,27 @@ export async function listFilesInServiceFolder(
     console.error("Failed to read directory:", error);
     return []; // Return an empty array in case of error
   }
+}
+
+export async function getTips(serviceName: KnownServices) {
+  let tips = "";
+  const imageFile = `static/${serviceName}/tips.html`;
+
+  try {
+    const stat = await Deno.stat(imageFile);
+    if (stat.isFile) {
+      tips = await Deno.readTextFile(imageFile);
+    }
+  } catch (error) {
+    if (error instanceof Deno.errors.NotFound) {
+      // The file doesn't exist
+      console.log("File not found:", imageFile);
+    } else {
+      // Some other error occurred
+      throw error;
+    }
+  }
+  tips = tips !== "" ? `<h3>Tips</h3>${tips}` : "";
+  console.log(tips);
+  return tips;
 }

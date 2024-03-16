@@ -1,6 +1,6 @@
 // deno run --allow-all generate-services-files.ts
 import { prompts, KnownServices, services } from "./config.ts";
-import { createTextFile } from "./utils.ts";
+import { createTextFile, getTips } from "./utils.ts";
 
 // Function to generate HTML content for each service
 async function generateServicePage(
@@ -48,6 +48,7 @@ async function generateServicePage(
     <h2><a href="/generativeAI">🏠 home</a> &gt; <a href="index.html">Services</a> &gt; <a href="${
       service?.url
     }">${serviceName}</a>🔗</h2>
+    ${await getTips(serviceName)}
     <p>Here are some example generated prompts from ${serviceName} service.</p>
     ${
       service?.comments
