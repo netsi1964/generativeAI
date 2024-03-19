@@ -46,7 +46,7 @@ async function generateIndexContent() {
       
       <h3>Tools</h3>
       <ul>
-      <li><a href="prompt-composition-tool.html">Prompt composition tool</a></li>
+      <li><a href="tools/prompt-composition-tool.html">Prompt composition tool</a></li>
       <ul>
     </body>
   </html>
