@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt composition tool</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <h1>Prompt composition tool</h1>
+    <div class="prompt-composition">
+      <div id="partsElement"></div>
+      <div>
+        <em>Click the example of use to use them in a prompt</em>
+        <textarea id="promptCompositionResult"></textarea>
+      </div>
+    </div>
+    <script>
+      const parts = [
+        {
+          name: "Artistic Style",
+          shortDescription: "Defines the overall visual style.",
+          detailedDescription:
+            "The artistic style sets the tone and visual language of the image, suggesting whether the artwork should resemble a certain artistic movement, era, or artist's signature style.",
+          examples: [
+            "Impressionism with soft brush strokes",
+            "Cyberpunk, featuring neon lights and futuristic elements",
+            "Studio Ghibli style, whimsical and heartfelt",
+            "Retro 80s, vibrant and nostalgic",
+          ],
+        },
+        {
+          name: "Composition",
+          shortDescription: "Describes the layout and perspective.",
+          detailedDescription:
+            "Composition refers to how elements are arranged within the artwork, including the perspective, framing, and focal points, to guide the viewer's eye and balance the piece.",
+          examples: [
+            "Wide-angle shot of a bustling cityscape",
+            "Close-up on a character's face, capturing emotion",
+            "Landscape orientation with a horizon line dividing sky and land",
+            "Bird's eye view over a winding river",
+          ],
+        },
+        {
+          name: "Medium",
+          shortDescription: "Specifies the creation medium.",
+          detailedDescription:
+            "The medium dictates the materials or techniques the artwork should emulate, such as digital painting, watercolor, or pencil sketch, affecting texture and finish.",
+          examples: [
+            "Digital painting with vibrant colors",
+            "Watercolor washes with soft edges",
+            "Charcoal sketch, rough and textured",
+            "Oil painting, rich in detail and depth",
+          ],
+        },
+        {
+          name: "Camera",
+          shortDescription: "Implies photographic elements.",
+          detailedDescription:
+            "Camera settings suggest the use of specific photographic techniques or lens effects, such as depth of field, focus, or the type of lens, to achieve a certain look.",
+          examples: [
+            "Bokeh effect with a shallow depth of field",
+            "70mm lens for a slightly compressed perspective",
+            "Fish-eye lens for a distorted, wide field of view",
+            "HDR to enhance contrast and detail",
+          ],
+        },
+        {
+          name: "Subject Description",
+          shortDescription: "Details the main focus.",
+          detailedDescription:
+            "This part vividly describes the main subject or theme of the artwork, including characters, objects, or scenes, providing specific details to shape its appearance and actions.",
+          examples: [
+            "A lone astronaut standing on a desolate alien planet",
+            "An ancient tree with roots deep in a mystical forest",
+            "A knight in shining armor facing a fiery dragon",
+            "A cybernetic robot wandering through post-apocalyptic ruins",
+          ],
+        },
+        {
+          name: "Environment",
+          shortDescription: "Sets the scene.",
+          detailedDescription:
+            "The environment contextualizes the subject within a specific setting or location, adding background elements that complement the narrative and mood.",
+          examples: [
+            "Futuristic city with skyscrapers and flying cars",
+            "A serene lake at sunrise, reflecting the soft colors of the sky",
+            "A bustling medieval marketplace filled with vendors and shoppers",
+            "An eerie, abandoned amusement park at night",
+          ],
+        },
+        {
+          name: "Lighting",
+          shortDescription: "Defines the light sources.",
+          detailedDescription:
+            "Lighting determines how light sources illuminate the scene, affecting the time of day, shadows, highlights, and the overall atmosphere of the piece.",
+          examples: [
+            "Golden hour sunlight casting long shadows",
+            "Moonlit night with a glowing, ethereal quality",
+            "Harsh midday sun creating strong contrast",
+            "Soft, diffused lighting on an overcast day",
+          ],
+        },
+        {
+          name: "Atmosphere",
+          shortDescription: "Captures the ambiance.",
+          detailedDescription:
+            "The atmosphere adds emotional tone and feeling to the artwork through weather conditions, air quality, or environmental effects like fog, rain, or dust.",
+          examples: [
+            "Misty morning adding a mysterious vibe",
+            "Sunny and clear with vibrant, saturated colors",
+            "Blizzard with swirling snow obscuring the view",
+            "Post-rain freshness with wet surfaces and clear air",
+          ],
+        },
+        {
+          name: "Mood",
+          shortDescription: "Conveys emotional tone.",
+          detailedDescription:
+            "Mood sets the emotional or psychological tone of the artwork, influencing how the viewer should feel about the scene, whether it's calm, eerie, joyful, or melancholic.",
+          examples: [
+            "Serene and peaceful, inviting quiet contemplation",
+            "Energetic and vibrant, full of life and movement",
+            "Melancholic and introspective, with a sense of longing",
+            "Terrifying and suspenseful, with an impending sense of dread",
+          ],
+        },
+      ];
+
+      let html = "";
+      parts.forEach((part) => {
+        const { name, shortDescription, detailedDescription, examples } = part;
+        let exampleHTML = examples.reduce((sum, curr) => {
+          return `${sum}<li class="part-example" data-name="${name}">${curr}</li>`;
+        }, "");
+        html += `
+	<div class="part">
+	<h2 class="part-name">${name} - ${shortDescription}</h2>
+	<div class="part-description">${detailedDescription}</div>
+	<h3>Example of use</h3>
+	<ul class="part-examples">${exampleHTML}</ul>
+	</div>
+	`;
+      });
+
+      partsElement.innerHTML = html;
+      const promptParts = new Map();
+
+      partsElement.addEventListener("click", ({ target }) => {
+        const name = target.dataset.name;
+        const value = target.textContent;
+        promptParts.set(name, value);
+        conertToPrompt();
+      });
+
+      function conertToPrompt() {
+        let generatedPrompt = "";
+        promptParts.entries().forEach((a) => {
+          generatedPrompt += `${a[1]}, `;
+        });
+        promptCompositionResult.value = generatedPrompt;
+      }
+    </script>
+  </body>
+</html>

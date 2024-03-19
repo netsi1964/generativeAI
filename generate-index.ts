@@ -1,6 +1,6 @@
+import { createTextFile } from "./utils.ts";
 // deno run --allow-read --allow-write generate-index.ts
 import { walk } from "https://deno.land/std/fs/mod.ts";
-import { createTextFile } from "./utils.ts";
 
 // Function to generate the index.html content
 async function generateIndexContent() {
@@ -43,6 +43,11 @@ async function generateIndexContent() {
       <h1>Example of generated images</h1>
       ${promptsListHTML}
       ${servicesListHTML}
+      
+      <h3>Tools</h3>
+      <ul>
+      <li><a href="prompt-composition-tool.html">Prompt composition tool</a></li>
+      <ul>
     </body>
   </html>
   `;
