@@ -16,6 +16,7 @@
       <div class="sticky">
         <em>Click the example of use to use them in a prompt</em
         ><button id="reset">Reset</button>
+        <input id="yourPart" placeholder="Your part of the prompt" />
         <textarea id="promptCompositionResult"></textarea>
       </div>
     </div>
@@ -77,7 +78,7 @@
       });
 
       function updatePrompt() {
-        let generatedPrompt = "";
+        let generatedPrompt = `${yourPart.value.trim()} `;
         promptParts.entries().forEach((a) => {
           generatedPrompt += `${a[1]}, `;
         });
