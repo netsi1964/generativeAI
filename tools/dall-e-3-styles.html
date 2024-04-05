@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dall-E 3 styles</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../static/dall-e-3-styles.js"></script>
+    <style>
+      #styles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        font-size: 12px;
+      }
+      .style {
+        box-shadow: 0 0 3px black;
+        min-width: 128px;
+        max-width: 128px;
+        min-height: 128px;
+        max-height: 128px;
+        background-image: var(--url);
+      }
+
+      .name {
+        text-align: center;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2><a href="/generativeAI">🏠 home</a> &gt; Tools</h2>
+
+    <h1>Dall-E 3 styles</h1>
+    <div class="split">
+      <div>
+        Here is a list of <span id="eleEntries"></span> styles which can be seen
+        in the
+        <a href="https://chat.openai.com/g/g-2fkFE8rbu-dall-e">Dall-E 3 GPT</a
+        >.<br />
+        When typing your prompt in Dall-E 3, there is a button you can click to
+        choose a style. You can also simply type the style in yourself.
+      </div>
+      <img src="../static/dalle-chips.png" alt="Dall-E 3 styles in ChatGPT" />
+    </div>
+    <br />
+    <div class="prompt-composition">
+      <div id="styles"></div>
+    </div>
+
+    <hr />
+
+    <a href="/generativeAI">🏠 home</a>
+    <script>
+      let html = "";
+      let entries = Object.entries(dallE3Styles);
+      entries.map(([style, url], i) => {
+        html += `<div><div class="style" style="--url: url(${url});"></div><div class="name">${
+          i + 1
+        }: <span style="user-select: all">${style}</span></div></div>`;
+      });
+      eleEntries.textContent = entries.length;
+      styles.innerHTML = html;
+    </script>
+  </body>
+</html>
