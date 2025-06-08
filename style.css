@@ -7,7 +7,7 @@
 html,
 body {
   margin: 0;
-  padding: 10px 50px;
+  padding: 12px;
   width: 100vw;
   height: 100vh;
   font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
@@ -33,10 +33,22 @@ h4 {
   justify-content: flex-start;
 }
 
+.prompts,
+netsi-prompts {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .prompts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
 }
 
 .prompt-text {
@@ -123,4 +135,22 @@ summary {
   background: hsla(150, 40%, 50%, 0.5);
   color: black;
   padding: var(--spacer);
+}
+
+@media (max-width: 600px) {
+  netsi-prompt {
+    --netsi-prompt-width: 100vw;
+    --netsi-prompt-height: 40vh;
+  }
+}
+
+netsi-prompts .prompts,
+netsi-prompts::part(prompts) {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
 }

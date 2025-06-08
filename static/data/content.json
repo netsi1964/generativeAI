@@ -1,0 +1,152 @@
+{
+  "services": [
+    {
+      "id": "grok3",
+      "name": "Grok 3",
+      "description": "Here are some example generated prompts using Grok 3 service.",
+      "url": "https://grok.com",
+      "imageFolder": "../images/grok3/",
+      "prompts": ["be-happy", "thai-woman", "cityscape-night.jpg", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
+    },
+    {
+      "id": "gpt4o",
+      "name": "GPT-4o",
+      "description": "Here are some example generated prompts using GPT-4o.",
+      "url": "https://chat.openai.com/gpt-4o",
+      "imageFolder": "../images/gpt4o/",
+      "prompts": ["be-happy", "thai-woman.jpg", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg:'A cinematic, 16:9 illustration of a happy family of four enjoying their vacation in Thailand. The mother is in the foreground taking a selfie, with a bright, joyful smile. Behind her, the father, a young son, and a young daughter are all smiling warmly, standing close together within arms length of the camera. The background shows a classic Thai beach scene: soft white sand, crystal-clear turquoise waters, tall palm trees swaying in the breeze, and a limestone cliff or island in the distance. The lighting is warm and sunny, and the color palette vibrant, capturing the essence of a perfect tropical vacation. The image should feel like a moment captured in a high-quality DSLR photo, blending realism with a painterly charm.'", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
+    },
+    {
+      "id": "imagen30",
+      "name": "Google Imagen 3.0",
+      "description": "Here are some example generated prompts using Google Imagen 3.0.",
+      "url": "https://aistudio.google.com/generate-image",
+      "imageFolder": "../images/imagen30/",
+      "prompts": ["be-happy.png", "thai-woman.png", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo", "sketch-woman-cliff.png", "hopeful-coffee.png"]
+    },
+    {
+      "id": "lexica.art",
+      "name": "lexica.art",
+      "description": "Here are some example generated prompts using lexica.art.",
+      "url": "https://lexica.art/",
+      "imageFolder": "../images/lexica.art/",
+      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
+    },
+    {
+      "id": "clipdrop.co",
+      "name": "clipdrop.co",
+      "description": "Here are some example generated prompts using clipdrop.co.",
+      "url": "https://clipdrop.co/",
+      "imageFolder": "../images/clipdrop.co/",
+      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo.png", "sketch-woman-cliff.png", "hopeful-coffee.png"]
+    },
+    {
+      "id": "chat.openai.com",
+      "name": "Dall-e3 (chat.openai.com)",
+      "description": "Here are some example generated prompts using Dall-e3 (chat.openai.com).",
+      "url": "https://chat.openai.com/",
+      "imageFolder": "../images/dall_e_3/",
+      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest", "melancholy-paris", "family-thailand", "vulture-photo.webp", "sketch-woman-cliff.webp", "hopeful-coffee"]
+    },
+    {
+      "id": "app.leonardo.ai",
+      "name": "app.leonardo.ai",
+      "description": "Here are some example generated prompts using app.leonardo.ai.",
+      "url": "https://app.leonardo.ai/",
+      "imageFolder": "../images/app.leonardo.ai/",
+      "prompts": ["be-happy", "thai-woman.jpg", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
+    },
+    {
+      "id": "runwayml.com",
+      "name": "runwayml.com",
+      "description": "Here are some example generated prompts using runwayml.com.",
+      "url": "https://runwayml.com/",
+      "imageFolder": "../images/runwayml.com/",
+      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
+    },
+    {
+      "id": "playground.com",
+      "name": "playground.com",
+      "description": "Here are some example generated prompts using playground.com.",
+      "url": "https://playground.com/",
+      "imageFolder": "../images/playground.com/",
+      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo.png", "sketch-woman-cliff.png", "hopeful-coffee.png"]
+    },
+    {
+      "id": "midjourney",
+      "name": "midjourney",
+      "description": "Here are some example generated prompts using midjourney.",
+      "url": "https://midjourney.com/",
+      "imageFolder": "../images/midjourney/",
+      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo.png", "sketch-woman-cliff.png", "hopeful-coffee.png"]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "be-happy",
+      "title": "80s-Inspired 'Be Happy' Sticker with Thumbs-Up",
+      "prompt": "Create a vibrant and colorful sticker design that embodies the aesthetic of the 1980s. The sticker should feature bold and bright colors, typical of the era. At the center of the design, include a large, cartoonish thumbs-up symbol, exuding positivity and enthusiasm. Overlay the image with the text: \"Don't worry, be happy\" in a font style that echoes the cheerful and carefree vibe of the 1980s. The text should be playful and lively, possibly with a neon or glowing effect to emphasize its upbeat message. The overall composition should evoke a sense of joy and nostalgia for the 1980s, making it look like an authentic piece of memorabilia from the decade.",
+      "filename": "80s-Inspired Be Happy Sticker with Thumbs-Up.jpg"
+    },
+    {
+      "id": "thai-woman",
+      "title": "A thai woman",
+      "prompt": "A photorealistic portrait of a smiling 25-year-old thai girl with long, flowing black hair and striking brown eyes with sunglass wearing white t-shirt. She should have a natural, approachable expression and be illuminated by soft, golden-hour sunlight. The background should be a scenic outdoor setting, perhaps a sunlit beach. Capture this image with a high-resolution photograph using an 85mm lens for a flattering perspective.",
+      "filename": "a-thai-woman.webp"
+    },
+    {
+      "id": "cityscape-night",
+      "title": "Surreal Cityscape at Night",
+      "prompt": "Create an image depicting a surreal cityscape at night, where the buildings twist and turn like ribbons against a starry sky. The architecture should blend futuristic elements with Art Nouveau styles, creating a scene that is both alien and familiar. The city is alive with glowing neon lights in a spectrum of colors, reflecting off twisting streets that seem to defy gravity. In the foreground, a river meanders through the city, its surface a mirror to the dazzling lights above. This scene should challenge the boundaries between reality and imagination, showcasing the AI's ability to merge architectural precision with the fluidity of dreamscapes.",
+      "filename": "Surreal Cityscape at Night.png"
+    },
+    {
+      "id": "awakening-forest",
+      "title": "The Awakening of an Ancient Forest",
+      "prompt": "Imagine an ancient forest at the moment of awakening, where every tree and plant is imbued with ethereal light. This image should capture the instant when the forest's ancient magic is rekindled, with spirits of nature visibly emerging from the flora. The trees are colossal, their roots deep and intertwined, while their leaves shimmer with a luminescent glow. A pathway leads into the heart of the forest, illuminated by floating orbs of light, inviting the viewer on a journey into the unknown. This scene should test the AI's ability to blend fantasy elements with a photorealistic natural environment, creating a sense of wonder and enchantment.",
+      "filename": "The Awakening of an Ancient Forest.webp"
+    },
+    {
+      "id": "melancholy-paris",
+      "title": "The Melancholy of a Rainy Parisian Street",
+      "prompt": "Generate an image that captures the melancholy and beauty of a rainy street in Paris in the early 20th century. The scene is set during the blue hour, with the cobblestone streets glistening under the soft glow of gas street lamps. Pedestrians with umbrellas stroll past quaint cafes and bookshops, their reflections blurred in the wet pavement. In the distance, the silhouette of the Eiffel Tower looms, partially obscured by the mist. This image should convey a sense of nostalgia and romance, challenging the AI to accurately depict historical details, weather effects, and the nuanced emotions of a bygone era.",
+      "filename": "The Melancholy of a Rainy Parisian Street.webp"
+    },
+    {
+      "id": "family-thailand",
+      "title": "Family Vacation Bliss in Thailand",
+      "prompt": "Generate a photo-realistic, 16:9 cinematic photograph of a family enjoying their vacation in Thailand. The image should capture a heartwarming moment where the mother, positioned in the foreground, is taking a selfie with her family, including the father, a boy, and a girl. They should all be smiling, appearing happy and relaxed, within arm's length of the camera to create a sense of intimacy and joy. In the magnificent background, the quintessential Thai beach should unfold, showcasing powdery white sands, crystal-clear turquoise waters, and lush palm trees swaying gently in the breeze. The composition should be reminiscent of a high-quality, inspiring DSLR photo, filled with vibrant colors and the natural beauty of Thailand, encapsulating the essence of a perfect family vacation.",
+      "filename": "Family Vacation Bliss in Thailand.webp"
+    },
+    {
+      "id": "vulture-photo",
+      "title": "A photograph of a vulture",
+      "prompt": "A photograph of a vulture",
+      "filename": "A photograph of a vulture.jpg"
+    },
+    {
+      "id": "sketch-woman-cliff",
+      "title": "A sketch of a woman standing on a cliff looking at the sea in a fancy art style",
+      "prompt": "A sketch of a woman standing on a cliff looking at the sea in a fancy art style",
+      "filename": "A sketch of a woman standing on a cliff looking at the sea in a fancy art style..jpg"
+    },
+    {
+      "id": "hopeful-coffee",
+      "title": "Hopeful Gaze in Coffee Tones",
+      "prompt": "Create a duotone image with a 'coffee' color tone. The subject is a young woman, her gaze uplifted in a hopeful expression. Her features are bathed in a soft light that casts gentle shadows across her face. She wears a flowing dress, with a hand delicately holding a dandelion ready to blow in the wind. The style is a charcoal sketch, rich in textures, blending realism with a touch of whimsy. The background should be simple, focusing attention on the woman and the dandelion",
+      "filename": "Hopeful Gaze in Coffee Tones.webp"
+    }
+  ],
+  "tips": [
+    {
+      "title": "Prompt Engineering",
+      "content": "Always be specific in your prompts ..."
+    }
+  ],
+  "tools": [
+    {
+      "title": "Image Upscaler",
+      "url": "https://example.com/upscaler"
+    }
+  ]
+}

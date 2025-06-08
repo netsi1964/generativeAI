@@ -5,28 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prompt composition tool</title>
     <link rel="stylesheet" href="../style.css" />
+    <script type="module" src="../static/components/netsi-prompt.js"></script>
+    <script type="module" src="../static/components/netsi-prompts.js"></script>
+    <style>
+      .prompt-composition {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        margin-top: 2em;
+      }
+      .sticky {
+        min-width: 320px;
+        max-width: 400px;
+        flex: 1 1 320px;
+      }
+      #promptCompositionResult {
+        width: 100%;
+        min-height: 80px;
+        margin-top: 1em;
+      }
+    </style>
     <script src="../static/prompt-parts.js"></script>
   </head>
   <body>
-    <h2><a href="/generativeAI">🏠 home</a> &gt;</h2>
-
-    <h1>Prompt composition tool</h1>
-    <div class="prompt-composition">
-      <div>
-        <p>ℹ️ Also see <a href="dall-e-3-styles.html">Dall-e 3 styles</a>.</p>
-        <div id="partsElement"></div>
+    <netsi-navigation></netsi-navigation>
+    <main>
+      <h2><a href="/generativeAI">🏠 home</a> &gt; <a href="../tools/">Tools</a> &gt; Prompt composition tool</h2>
+      <h1>Prompt composition tool</h1>
+      <div class="prompt-composition">
+        <div>
+          <div id="partsElement"></div>
+        </div>
+        <div class="sticky">
+          <em>Click the example of use to use them in a prompt</em>
+          <button id="reset">Reset</button>
+          <input id="yourPart" placeholder="Your part of the prompt" />
+          <textarea id="promptCompositionResult"></textarea>
+        </div>
       </div>
-      <div class="sticky">
-        <em>Click the example of use to use them in a prompt</em
-        ><button id="reset">Reset</button>
-        <input id="yourPart" placeholder="Your part of the prompt" />
-        <textarea id="promptCompositionResult"></textarea>
-      </div>
-    </div>
-
-    <hr />
-
-    <a href="/generativeAI">🏠 home</a>
+      <hr />
+      <a href="/generativeAI">🏠 home</a>
+    </main>
+    <script type="module" src="../static/components/netsi-navigation.js"></script>
     <script>
       let html = ``;
       parts.forEach((part) => {

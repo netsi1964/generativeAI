@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Generative AI SPA</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="static/components/netsi-prompt.js"></script>
+    <script type="module" src="static/components/netsi-prompts.js"></script>
+    <script type="module" src="static/components/netsi-navigation.js"></script>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; padding: 0; }
+      main { padding: 2em 1em; margin: auto; }
+      h1 { margin-top: 0; }
+    </style>
+  </head>
+  <body>
+    <netsi-navigation></netsi-navigation>
+    <main id="spa-root"></main>
+    <script type="module">
+      const root = document.getElementById('spa-root');
+      let content = null;
+
+      async function loadContent() {
+        if (!content) {
+          const res = await fetch('static/data/content.json');
+          content = await res.json();
+        }
+      }
+
+      function renderHome() {
+        root.innerHTML = `<h1>Welcome to Generative AI SPA</h1>
+          <p>Choose a service or prompt from the menu above.</p>`;
+      }
+
+      function renderTips() {
+        root.innerHTML = `<h1>Tips</h1>
+          <ul>
+            ${content.tips.map(tip => `<li><strong>${tip.title}:</strong> ${tip.content}</li>`).join('')}
+          </ul>`;
+      }
+
+      function renderTools() {
+        root.innerHTML = `<h1>Tools</h1>
+          <ul>
+            ${content.tools.map(tool => `<li><a href="${tool.url}" target="_blank">${tool.title}</a></li>`).join('')}
+          </ul>`;
+      }
+
+      function renderService(id) {
+        const service = content.services.find(s => s.id === id);
+        if (!service) {
+          root.innerHTML = `<p>Service not found.</p>`;
+          return;
+        }
+        const promptCards = service.prompts.map(pid => {
+          let idAndExt = pid;
+          let customPrompt = null;
+          const firstColon = pid.indexOf(':');
+          if (firstColon !== -1) {
+            idAndExt = pid.slice(0, firstColon);
+            customPrompt = pid.slice(firstColon + 1).replace(/^'+|'+$/g, '');
+          }
+          const [promptId, ext] = idAndExt.split('.');
+          const prompt = content.prompts.find(p => p.id === promptId);
+          if (!prompt) return '';
+          let filename = prompt.filename;
+          if (ext) filename = filename.replace(/\.[^.]+$/, '.' + ext);
+          const imageUrl = service.imageFolder.replace(/\/+$/, '') + '/' + filename;
+          const promptText = customPrompt ? customPrompt : prompt.prompt;
+          return `
+            <netsi-prompt
+              title="${prompt.title}"
+              title-link="#/prompt/${prompt.id}"
+              image="${imageUrl}"
+              prompt="${promptText.replace(/"/g, '&quot;')}"
+              alt="${prompt.title}">
+            </netsi-prompt>
+          `;
+        }).join('');
+
+        root.innerHTML = `
+          <netsi-prompts
+            title="${service.name}"
+            prompt="${service.description ? service.description.replace(/"/g, '&quot;') : ''}"
+          >
+            ${promptCards}
+          </netsi-prompts>
+        `;
+      }
+
+      function renderPrompt(id) {
+        const prompt = content.prompts.find(p => p.id === id);
+        if (!prompt) {
+          root.innerHTML = `<p>Prompt not found.</p>`;
+          return;
+        }
+        const services = content.services.filter(s =>
+          s.prompts.some(pid => {
+            const firstColon = pid.indexOf(':');
+            const idAndExt = firstColon === -1 ? pid : pid.slice(0, firstColon);
+            const [promptId] = idAndExt.split('.');
+            return promptId === id;
+          })
+        );
+        const promptCards = services.map(service => {
+          const pid = service.prompts.find(pid => {
+            const firstColon = pid.indexOf(':');
+            const idAndExt = firstColon === -1 ? pid : pid.slice(0, firstColon);
+            const [promptId] = idAndExt.split('.');
+            return promptId === id;
+          });
+
+          let idAndExt = pid;
+          let customPrompt = null;
+          const firstColon = pid.indexOf(':');
+          if (firstColon !== -1) {
+            idAndExt = pid.slice(0, firstColon);
+            customPrompt = pid.slice(firstColon + 1).replace(/^'+|'+$/g, '');
+          }
+          const [promptId, ext] = idAndExt.split('.');
+          let filename = prompt.filename;
+          if (ext) {
+            filename = filename.replace(/\.[^.]+$/, '.' + ext);
+          }
+          const imageUrl = service.imageFolder.replace(/\/+$/, '') + '/' + filename;
+          // Always show prompt (custom if present, otherwise default)
+          const promptText = customPrompt ? customPrompt : prompt.prompt;
+          return `
+            <netsi-prompt
+              title="${service.name}"
+              title-link="#/service/${service.id}"
+              image="${imageUrl}"
+              prompt="${promptText.replace(/"/g, '&quot;')}"
+              alt="${prompt.title}"
+              data-large
+            ></netsi-prompt>
+          `;
+        }).join('');
+
+        root.innerHTML = `
+          <netsi-prompts
+            title="${prompt.title}"
+            prompt="${prompt.prompt.replace(/"/g, '&quot;')}"
+          >
+            ${promptCards}
+          </netsi-prompts>
+        `;
+      }
+
+      function parseHash() {
+        const hash = location.hash.replace(/^#\//, '');
+        if (!hash || hash === '') return { page: '' };
+        const [page, sub] = hash.split('/');
+        return { page, sub };
+      }
+
+      async function router() {
+        await loadContent();
+        const { page, sub } = parseHash();
+        if (!page) {
+          renderHome();
+        } else if (page === 'tips') {
+          renderTips();
+        } else if (page === 'tools') {
+          renderTools();
+        } else if (page === 'service') {
+          renderService(sub);
+        } else if (page === 'prompt') {
+          renderPrompt(sub);
+        } else {
+          root.innerHTML = `<p>Not found.</p>`;
+        }
+      }
+
+      window.addEventListener('hashchange', router);
+      window.addEventListener('DOMContentLoaded', router);
+    </script>
+  </body>
+</html>
