@@ -1,9 +1,6 @@
 class NetsiNavigation extends HTMLElement {
   connectedCallback() {
-    // Helper to build correct SPA or full path
-    // Use root-relative path for SPA links
-    // Always use /new.html for SPA, regardless of subfolder
-    const spaPrefix = '/new.html';
+    const spaPrefix = '/index.html';
     const promptToolPath = '/tools/prompt-composition-tool.html';
 
     this.innerHTML = `
@@ -124,8 +121,15 @@ class NetsiNavigation extends HTMLElement {
           const href = link.getAttribute('href');
           const hashIndex = href.indexOf('#/');
           if (hashIndex !== -1) {
-            // Always jump to /new.html with hash
-            window.location.href = '/new.html' + href.slice(hashIndex - 0);
+            if (
+              window.location.pathname.endsWith('/index.html') ||
+              window.location.pathname === '/index.html'
+            ) {
+              window.location.hash = href.slice(hashIndex);
+              window.scrollTo(0, 0);
+            } else {
+              window.location.href = spaPrefix + href.slice(hashIndex - 0);
+            }
           }
         }
       });
