@@ -1,6 +1,6 @@
 class NetsiPrompt extends HTMLElement {
   static get observedAttributes() {
-    return ['title', 'prompt', 'image', 'alt', 'title-link'];
+    return ['title', 'prompt', 'image', 'alt', 'title-link', 'info'];
   }
 
   constructor() {
@@ -29,12 +29,48 @@ class NetsiPrompt extends HTMLElement {
     }
   }
 
+  handleImageError(event) {
+    const img = event.target;
+    if (img.dataset.fallback) return;
+
+    const link = img.closest('a');
+    if (!link) return;
+
+    const extensions = ['.png', '.jpg', '.jpeg', '.webp'];
+    const currentSrc = img.src;
+    
+    const currentPathname = new URL(currentSrc).pathname;
+    const dotIndex = currentPathname.lastIndexOf('.');
+    if (dotIndex === -1) {
+      link.parentElement.remove();
+      return;
+    }
+    
+    const basePath = currentPathname.substring(0, dotIndex);
+    const currentExt = currentPathname.substring(dotIndex).toLowerCase();
+    
+    const currentIndex = extensions.indexOf(currentExt);
+    const nextIndex = currentIndex + 1;
+
+    if (nextIndex < extensions.length) {
+      const newSrc = basePath + extensions[nextIndex];
+      img.src = newSrc;
+      link.href = newSrc;
+    } else {
+      const dummyUrl = 'https://dummyimage.com/1000x563/ffffff/00008B.png&text=Coming+soon';
+      img.src = dummyUrl;
+      link.href = dummyUrl;
+      img.dataset.fallback = 'true';
+    }
+  }
+
   render() {
     const title = this.getAttribute('title') || '';
     const titleLink = this.getAttribute('title-link') || '';
     const prompt = this.getAttribute('prompt') || '';
     const image = this.getAttribute('image') || '';
     const alt = this.getAttribute('alt') || '';
+    const info = this.getAttribute('info') || '';
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -147,6 +183,11 @@ class NetsiPrompt extends HTMLElement {
           border-color: #219653;
           background: #eafbe7;
         }
+        .prompt-info {
+          font-size: 0.9em;
+          margin-bottom: 0.7em;
+          color: #555;
+        }
         @media (max-width: 600px) {
           .prompt {
             max-width: 100vw;
@@ -185,10 +226,11 @@ class NetsiPrompt extends HTMLElement {
               ? `<h2 class="prompt-title"><a href="${titleLink}" target="_blank" rel="noopener">${title}</a></h2>`
               : `<h2 class="prompt-title">${title}</h2>`
           }
+          ${info ? `<p class="prompt-info">${info}</p>` : ''}
           ${image ? `
           <div class="prompt-image">
-            <a href="${image}" target="_blank">
-              <img src="${image}" alt="${alt}" />
+            <a target="_blank">
+              <img alt="${alt}" />
             </a>
           </div>` : ''}
           ${prompt && !this.hasAttribute('hide-prompt') ? `
@@ -209,6 +251,16 @@ class NetsiPrompt extends HTMLElement {
       const btn = this.shadowRoot.getElementById('copy-btn');
       if (btn) {
         btn.onclick = () => this.copyPrompt();
+      }
+    }
+
+    if (image) {
+      const img = this.shadowRoot.querySelector('img');
+      const link = this.shadowRoot.querySelector('.prompt-image a');
+      if (img && link) {
+        img.addEventListener('error', (e) => this.handleImageError(e));
+        link.href = image;
+        img.src = image;
       }
     }
   }

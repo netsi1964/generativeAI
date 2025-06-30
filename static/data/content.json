@@ -137,6 +137,368 @@
       "filename": "Hopeful Gaze in Coffee Tones.webp"
     }
   ],
+  "styles": [
+    {
+      "id": "popeye",
+      "style": "Popeye",
+      "artist": "Elzie Crisler Segar",
+      "eu": true,
+      "usa": true,
+      "info": "The earliest strips from 1929 by E.C. Segar (d. 1938) are in the public domain in both regions. URL: https://en.wikipedia.org/wiki/Popeye",
+      "stylePrompt": "In the style of a 1929 gritty, black-and-white newspaper comic strip, with characters having bulbous features and squinting eyes, drawn with rough, thick ink lines."
+    },
+    {
+      "id": "tintin",
+      "style": "Tintin",
+      "artist": "Hergé",
+      "eu": false,
+      "usa": true,
+      "info": "Only the first story, \"Tintin in the Land of the Soviets\" (1929), is in the US public domain. All of Hergé's (d. 1983) works are copyrighted in the EU. URL: https://en.wikipedia.org/wiki/The_Adventures_of_Tintin",
+      "stylePrompt": "In the Belgian \"ligne claire\" art style of 1929, using clear, strong lines of uniform weight, with no hatching and a contrast between realistic backgrounds and cartoony characters."
+    },
+    {
+      "id": "buck-rogers",
+      "style": "Buck Rogers",
+      "artist": "Philip F. Nowlan, Dick Calkins",
+      "eu": false,
+      "usa": true,
+      "info": "The original comic strip from 1929 is in the US public domain. Not in the EU, as Calkins died in 1962. URL: https://en.wikipedia.org/wiki/Buck_Rogers",
+      "stylePrompt": "In the style of a 1929 retro-futuristic science fiction comic strip, featuring Art Deco-inspired spaceships, ray guns, and fantastical alien worlds, with a pulp adventure feel."
+    },
+    {
+      "id": "little-nemo",
+      "style": "Little Nemo",
+      "artist": "Winsor McCay",
+      "eu": true,
+      "usa": true,
+      "info": "Created in 1905 and solidly in the public domain in both regions (McCay d. 1934). URL: https://en.wikipedia.org/wiki/Little_Nemo",
+      "stylePrompt": "In a surreal Art Nouveau comic panel style, characterized by elaborate details, fantastical architecture, vibrant pastel colors, and dream-like logic."
+    },
+    {
+      "id": "the-katzenjammer-kids",
+      "style": "The Katzenjammer Kids",
+      "artist": "Rudolph Dirks",
+      "eu": false,
+      "usa": true,
+      "info": "The early strips from 1897 are in the US public domain, but not the EU, as Dirks died in 1968. URL: https://en.wikipedia.org/wiki/The_Katzenjammer_Kids",
+      "stylePrompt": "In the style of an early 20th-century cartoon, defined by slapstick humor, chaotic energy, and simple linework, often featuring speech balloons with accented text."
+    },
+    {
+      "id": "krazy-kat",
+      "style": "Krazy Kat",
+      "artist": "George Herriman",
+      "eu": true,
+      "usa": true,
+      "info": "Started in 1913. It is in the public domain in both regions (Herriman d. 1944). URL: https://en.wikipedia.org/wiki/Krazy_Kat",
+      "stylePrompt": "In a surrealist black-and-white ink wash style, featuring ever-shifting, minimalist desert landscapes and poetic, nonsensical dialogue."
+    },
+    {
+      "id": "bringing-up-father",
+      "style": "Bringing Up Father",
+      "artist": "George McManus",
+      "eu": true,
+      "usa": true,
+      "info": "Debuted in 1913. In the public domain in both regions, as McManus died in 1954 (PD in EU from Jan 1, 2025). URL: https://en.wikipedia.org/wiki/Bringing_Up_Father",
+      "stylePrompt": "In a 1910s Art Deco comic strip style, depicting high-society life with elegant fashion, comedic domestic situations, and clean, graceful lines."
+    },
+    {
+      "id": "gasoline-alley",
+      "style": "Gasoline Alley",
+      "artist": "Frank King",
+      "eu": false,
+      "usa": true,
+      "info": "The early strips from 1918 are in the US public domain, but not the EU, as King died in 1969. URL: https://en.wikipedia.org/wiki/Gasoline_Alley",
+      "stylePrompt": "In the style of an early American suburbia comic strip, known for its warm, detailed ink drawings, gentle humor, and focus on family life."
+    },
+    {
+      "id": "felix-the-cat",
+      "style": "Felix the Cat",
+      "artist": "Pat Sullivan, Otto Messmer",
+      "eu": false,
+      "usa": true,
+      "info": "The earliest versions from 1919 are in the US public domain, but not the EU due to Messmer (d. 1983). URL: https://en.wikipedia.org/wiki/Felix_the_Cat",
+      "stylePrompt": "In the style of a silent film era cartoon, characterized by bold black-and-white graphics, surreal transformations, and characters with wide eyes and big grins."
+    },
+    {
+      "id": "the-gumps",
+      "style": "The Gumps",
+      "artist": "Sidney Smith",
+      "eu": true,
+      "usa": true,
+      "info": "Started in 1917. In the public domain in both regions (Smith d. 1935). URL: https://en.wikipedia.org/wiki/The_Gumps",
+      "stylePrompt": "In a 1920s comic strip style about an ordinary middle-class family, defined by gentle domestic humor and a clear, simple line art style."
+    },
+    {
+      "id": "mutt-and-jeff",
+      "style": "Mutt and Jeff",
+      "artist": "Bud Fisher",
+      "eu": true,
+      "usa": true,
+      "info": "Started in 1907. In the public domain in both regions, as Fisher died in 1954 (PD in EU from Jan 1, 2025). URL: https://en.wikipedia.org/wiki/Mutt_and_Jeff",
+      "stylePrompt": "In the style of an early newspaper comic, featuring slapstick comedy and dynamic, simple black-and-white art centered on a duo of mismatched characters."
+    },
+    {
+      "id": "polly-and-her-pals",
+      "style": "Polly and Her Pals",
+      "artist": "Cliff Sterrett",
+      "eu": false,
+      "usa": true,
+      "info": "Started in 1912. The early strips are in the US public domain, but not the EU (Sterrett d. 1964). URL: https://en.wikipedia.org/wiki/Polly_and_Her_Pals",
+      "stylePrompt": "In a high-fashion comic strip style influenced by Art Deco and Cubism, featuring surreal, stylized backgrounds and fashionable 1920s clothing."
+    },
+    {
+      "id": "barney-google",
+      "style": "Barney Google",
+      "artist": "Billy DeBeck",
+      "eu": true,
+      "usa": true,
+      "info": "The original strips from 1919 are in the public domain (DeBeck d. 1942). URL: https://en.wikipedia.org/wiki/Barney_Google_and_Snuffy_Smith",
+      "stylePrompt": "In a 1920s cartoony comic strip style, featuring characters with large \"googly\" eyes, often involved in sports, gambling, and absurd situations."
+    },
+    {
+      "id": "toonerville-folks",
+      "style": "Toonerville Folks",
+      "artist": "Fontaine Fox",
+      "eu": false,
+      "usa": true,
+      "info": "Started in 1908. The early strips are in the US public domain, but not the EU (Fox d. 1964). URL: https://en.wikipedia.org/wiki/Toonerville_Folks",
+      "stylePrompt": "In the style of a single-panel cartoon depicting eccentric small-town characters, defined by a folksy, humorous, and observational tone."
+    },
+    {
+      "id": "zorro",
+      "style": "Zorro",
+      "artist": "Johnston McCulley",
+      "eu": false,
+      "usa": true,
+      "info": "The first story, \"The Curse of Capistrano\" (1919), is in the US public domain, but not the EU (McCulley d. 1958). URL: https://en.wikipedia.org/wiki/Zorro",
+      "stylePrompt": "In a pulp adventure style set in Spanish California, characterized by dramatic, shadowy visuals of a masked hero fighting for justice."
+    },
+    {
+      "id": "little-annie-rooney",
+      "style": "Little Annie Rooney",
+      "artist": "Darrell McClure",
+      "eu": false,
+      "usa": true,
+      "info": "Started in 1927 and is in the US public domain, but not the EU (McClure d. 1987). URL: https://en.wikipedia.org/wiki/Little_Annie_ Rooney",
+      "stylePrompt": "In the style of a 1920s adventure comic strip, telling heartwarming and dramatic stories with a focus on a resilient, wandering protagonist."
+    },
+    {
+      "id": "the-yellow-kid",
+      "style": "The Yellow Kid",
+      "artist": "Richard F. Outcault",
+      "eu": true,
+      "usa": true,
+      "info": "One of the first comic strips (1895). Solidly in the public domain (Outcault d. 1928). URL: https://en.wikipedia.org/wiki/The_Yellow_Kid",
+      "stylePrompt": "In the style of a late 19th-century newspaper comic, featuring chaotic urban street scenes with multiple characters and dialogue written on clothing."
+    },
+    {
+      "id": "happy-hooligan",
+      "style": "Happy Hooligan",
+      "artist": "Frederick Burr Opper",
+      "eu": true,
+      "usa": true,
+      "info": "A pioneer from 1900. Is in the public domain (Opper d. 1937). URL: https://en.wikipedia.org/wiki/Happy_Hooligan",
+      "stylePrompt": "In a Vaudeville-era comic strip style, using simple, clear line work to depict slapstick comedy, often featuring a gentle tramp character."
+    },
+    {
+      "id": "fritzi-ritz",
+      "style": "Fritzi Ritz",
+      "artist": "Larry Whittington",
+      "eu": false,
+      "usa": true,
+      "info": "The early strips from 1922 are in the US public domain. EU status is complex due to later artists. URL: https://en.wikipedia.org/wiki/Fritzi_Ritz",
+      "stylePrompt": "In a 1920s \"flapper\" comic strip style, defined by clean, stylish Art Deco-inspired drawings of a fashionable young woman in humorous daily situations."
+    },
+    {
+      "id": "gods-man",
+      "style": "God's Man",
+      "artist": "Lynd Ward",
+      "eu": false,
+      "usa": true,
+      "info": "This wordless novel from 1929 is in the US public domain, but not the EU (Ward d. 1985). URL: https://en.wikipedia.org/wiki/Gods%27_Man",
+      "stylePrompt": "In a silent, narrative style using Expressionist woodcuts, characterized by stark black-and-white contrast and dramatic, emotional imagery."
+    },
+    {
+      "id": "ukiyo-e",
+      "style": "Ukiyo-e",
+      "artist": "Japan / Hokusai, Hiroshige",
+      "eu": true,
+      "usa": true,
+      "info": "A genre of Japanese woodblock prints and paintings produced between the 17th and 20th centuries, featuring subjects from history, landscapes, and urban life. URL: https://en.wikipedia.org/wiki/Ukiyo-e",
+      "stylePrompt": "In the Japanese Ukiyo-e woodblock print style, using bold outlines, flat areas of color, and asymmetrical compositions to depict stylized landscapes or figures."
+    },
+    {
+      "id": "persian-miniature",
+      "style": "Persian Miniature",
+      "artist": "Persia (Iran) / Kamal-ud-din Behzad",
+      "eu": true,
+      "usa": true,
+      "info": "A small, richly detailed painting from a manuscript or book. Known for its intricate details, strong colors, and scenes from mythology and poetry. URL: https://en.wikipedia.org/wiki/Persian_miniature",
+      "stylePrompt": "In the style of a Persian miniature, characterized by intricate details, vibrant jewel-toned colors, gold leaf accents, and a flat perspective for epic or poetic scenes."
+    },
+    {
+      "id": "egyptian-mural",
+      "style": "Egyptian Mural",
+      "artist": "Ancient Egypt / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "The highly symbolic and stylized art found on the walls of tombs and temples in Ancient Egypt, known for its composite view (profile head, frontal torso). URL: https://en.wikipedia.org/wiki/Art_of_ancient_Egypt",
+      "stylePrompt": "In the style of an Ancient Egyptian mural, featuring figures in profile with frontal eyes, hieroglyphic symbols, and a palette of earthy reds, yellows, black, and blue, on a papyrus or stone texture."
+    },
+    {
+      "id": "mayan-codex",
+      "style": "Mayan Codex",
+      "artist": "Mesoamerica / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "The art style found in pre-Columbian folding books from the Maya civilization, characterized by hieroglyphic script and ritualistic scenes. URL: https://en.wikipedia.org/wiki/Maya_codices",
+      "stylePrompt": "In the style of a Mayan codex, using elegant black and red outlines on fibrous paper, depicting gods and nobles with elaborate headdresses and symbolic glyphs."
+    },
+    {
+      "id": "shan-shui",
+      "style": "Shan shui",
+      "artist": "China / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "A style of traditional Chinese landscape painting that involves depicting scenery or natural landscapes, often with a philosophical, monochrome aesthetic. URL: https://en.wikipedia.org/wiki/Shan_shui",
+      "stylePrompt": "In the Chinese Shan shui ink wash painting style, featuring vast, monochromatic landscapes of mountains, rivers, and waterfalls, using expressive, calligraphic brushstrokes."
+    },
+    {
+      "id": "mughal-miniature",
+      "style": "Mughal Miniature",
+      "artist": "Mughal Empire (India) / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "A style of South Asian painting, heavily influenced by Persian miniatures, known for its realistic detail, formal portraiture, and depictions of courtly life. URL: https://en.wikipedia.org/wiki/Mughal_painting",
+      "stylePrompt": "In the style of a Mughal miniature painting, with highly detailed realism, rich colors, intricate borders, and a focus on portraits, royal court scenes, or nature."
+    },
+    {
+      "id": "sumi-e",
+      "style": "Sumi-e",
+      "artist": "Japan & China / Sesshū Tōyō",
+      "eu": true,
+      "usa": true,
+      "info": "A style of monochrome ink wash painting where subjects are painted with a brush dipped in black ink, emphasizing simplicity, beauty, and spiritualism. URL: https://en.wikipedia.org/wiki/Ink_wash_painting",
+      "stylePrompt": "In the minimalist Sumi-e ink wash style, using varying concentrations of black ink on paper to create expressive, spiritual paintings of nature, like bamboo or mountains."
+    },
+    {
+      "id": "wayang-kulit",
+      "style": "Wayang Kulit",
+      "artist": "Indonesia / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "The art style of traditional shadow puppets from Java and Bali. The puppets are intricately carved from leather to create detailed silhouettes. URL: https://en.wikipedia.org/wiki/Wayang_kulit",
+      "stylePrompt": "In the style of a Wayang Kulit shadow puppet, depicted as an ornate and stylized silhouette with intricate perforated details, seen against a backlit white screen."
+    },
+    {
+      "id": "aboriginal-dot-art",
+      "style": "Aboriginal Dot Art",
+      "artist": "Australia / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "A traditional style of painting based on ancient symbols and stories of the Australian Aboriginal peoples, using intricate patterns of dots to form larger images. URL: https://en.wikipedia.org/wiki/Aboriginal_Australian_art",
+      "stylePrompt": "In the style of Aboriginal dot art, using intricate patterns of dots in earthy tones to create symbolic imagery and maps, often from an aerial or spiritual perspective."
+    },
+    {
+      "id": "aztec-codex",
+      "style": "Aztec Codex",
+      "artist": "Mesoamerica / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "The pictographic and ideographic art style found in manuscripts from the Aztec Empire, characterized by bold outlines and flat fields of color. URL: https://en.wikipedia.org/wiki/Aztec_codices",
+      "stylePrompt": "In the style of an Aztec codex, using thick black outlines and flat areas of bright color to depict gods, warriors, and pictographic stories on animal hide or paper."
+    },
+    {
+      "id": "ethiopian-iconography",
+      "style": "Ethiopian Iconography",
+      "artist": "Ethiopia / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "A unique Christian art tradition, known for its stylized figures with large, almond-shaped eyes, bold colors, and dark outlines, often painted on wood or in manuscripts. URL: https://en.wikipedia.org/wiki/Ethiopian_art",
+      "stylePrompt": "In the style of an Ethiopian religious icon, featuring stylized figures with large, expressive eyes and halos, painted with bold, flat colors and heavy black outlines."
+    },
+    {
+      "id": "iznik-pottery",
+      "style": "Iznik Pottery",
+      "artist": "Turkey / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "A style of decorative ceramic art from the Ottoman Empire, famous for its intricate floral (tulips, carnations) and geometric patterns on a white base. URL: https://en.wikipedia.org/wiki/Iznik_pottery",
+      "stylePrompt": "In the decorative style of Ottoman Iznik pottery, featuring intricate floral and geometric patterns in vibrant cobalt blue, turquoise, and red on a brilliant white background."
+    },
+    {
+      "id": "haida-formline",
+      "style": "Haida Formline",
+      "artist": "North America / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "The traditional art of the Haida people of the Pacific Northwest, characterized by continuous, flowing lines (formlines) that create stylized animal and mythic figures. URL: https://en.wikipedia.org/wiki/Formline_art",
+      "stylePrompt": "In the Haida formline art style, using bold, flowing black and red lines with ovoid and U-form shapes to create a complex, stylized depiction of an animal like an eagle or bear."
+    },
+    {
+      "id": "madhubani",
+      "style": "Madhubani",
+      "artist": "India / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "A folk painting style from the Mithila region of India, characterized by its complex geometric patterns, double-line borders, and use of natural dyes. URL: https://en.wikipedia.org/wiki/Madhubani_art",
+      "stylePrompt": "In the Madhubani folk art style, filling the entire canvas with intricate geometric patterns, double-line borders, and figures from mythology, using a pen with bright colors."
+    },
+    {
+      "id": "minhwa",
+      "style": "Minhwa",
+      "artist": "Korea / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "A genre of Korean folk art known for its vibrant colors, naive or \"primitive\" style, and use of symbolic motifs like tigers, magpies, and flowers. URL: https://en.wikipedia.org/wiki/Minhwa",
+      "stylePrompt": "In the Korean Minhwa folk art style, featuring symbolic animals like a humorous tiger and a magpie, painted with vibrant, bold colors in a naive and optimistic manner."
+    },
+    {
+      "id": "benin-bronze",
+      "style": "Benin Bronze",
+      "artist": "Kingdom of Benin (Nigeria) / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "Cast-metal plaques and sculptures that decorated the royal palace of the Oba of Benin, known for their stylized realism and detailed depictions of court life. URL: https://en.wikipedia.org/wiki/Benin_Bronzes",
+      "stylePrompt": "In the style of a Benin Bronze relief plaque, depicting stylized figures of kings and warriors in ceremonial dress, cast in a material with a textured bronze patina."
+    },
+    {
+      "id": "tingatinga",
+      "style": "Tingatinga",
+      "artist": "Tanzania / Edward Tingatinga",
+      "eu": true,
+      "usa": true,
+      "info": "A modern East African painting style, characterized by its use of vibrant enamel paints on board and its cartoonish, flat depictions of African wildlife. URL: https://en.wikipedia.org/wiki/Tingatinga_(painting)",
+      "stylePrompt": "In the Tingatinga painting style, using vibrant, glossy enamel paints to create a flat, cartoonish image of African animals against a colorful, decorative background."
+    },
+    {
+      "id": "thangka",
+      "style": "Thangka",
+      "artist": "Tibet / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "A Tibetan Buddhist painting on cotton or silk, typically depicting a Buddhist deity, scene, or mandala, known for its extreme detail and symbolism. URL: https://en.wikipedia.org/wiki/Thangka",
+      "stylePrompt": "In the style of a Tibetan Thangka painting, with a highly detailed and symmetrical composition of a central Buddhist deity surrounded by intricate patterns and smaller figures."
+    },
+    {
+      "id": "amate-painting",
+      "style": "Amate Painting",
+      "artist": "Mexico / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "A Mexican folk art style of painting on amate, a fibrous bark paper. The paintings often depict brightly colored birds, animals, and village scenes. URL: https://en.wikipedia.org/wiki/Amate",
+      "stylePrompt": "In the Mexican Amate folk art style, featuring brightly colored, stylized birds and flowers with intricate patterns, painted on a dark, fibrous bark paper texture."
+    },
+    {
+      "id": "adinkra",
+      "style": "Adinkra",
+      "artist": "Ghana / Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "Visual symbols from the Akan people of Ghana that represent concepts or aphorisms. They are used extensively in fabrics, pottery, and logos. URL: https://en.wikipedia.org/wiki/Adinkra_symbols",
+      "stylePrompt": "In the style of Adinkra printed fabric, featuring repeating geometric symbols stamped in black ink onto a woven, earth-toned cloth background."
+    }
+  ],
   "tips": [
     {
       "title": "Prompt Engineering",

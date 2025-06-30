@@ -123,6 +123,7 @@ function renderNav() {
           ${content.prompts.map(p => `<li><a href="#/prompt/${p.id}">${p.title}</a></li>`).join('')}
         </ul>
       </li>
+      <li><a href="#/styles">Styles</a></li>
     </ul>
   `;
 }
@@ -182,6 +183,31 @@ function renderTools() {
     div.innerHTML = `<a href="${tool.url}" target="_blank">${tool.title}</a>`;
     toolsList.appendChild(div);
   });
+  root.innerHTML = '';
+  root.appendChild(tmpl);
+}
+
+function renderStyles() {
+  const tmpl = document.getElementById('styles-template').content.cloneNode(true);
+  const disclaimer = `Public domain laws are complex and differ by country. In the USA, works published before January 1, 1928, are generally in the public domain. Works from 1929 enter the public domain on January 1, 2025. In the European Union, copyright typically lasts for 70 years after the death of the last surviving creator. This list, current as of June 30, 2025, refers to the **earliest versions** of these characters and series. Later versions or specific elements may still be under copyright.`;
+  tmpl.querySelector('.disclaimer').textContent = disclaimer.replace(/\*\*/g, "");
+  const promptsEl = tmpl.querySelector('netsi-prompts');
+
+  content.styles.forEach(style => {
+    const el = document.createElement('netsi-prompt');
+    const image = `images/styles/${style.id}.png`;
+    const info = `${style.info} Artist: ${style.artist}. EU: ${
+      style.eu ? "✅" : "❌"
+    } / USA: ${style.usa ? "✅" : "❌"}`;
+
+    el.setAttribute('title', style.style);
+    el.setAttribute('prompt', style.stylePrompt);
+    el.setAttribute('image', image);
+    el.setAttribute('alt', style.style);
+    el.setAttribute('info', info);
+    promptsEl.appendChild(el);
+  });
+
   root.innerHTML = '';
   root.appendChild(tmpl);
 }
@@ -254,23 +280,24 @@ function renderPrompt(promptId) {
 async function router() {
   await loadContent();
   renderNav();
-  const hash = location.hash.replace(/^#\//, '');
-  if (!hash || hash === '') {
-    renderHome();
-  } else if (hash === 'tips') {
+  const path = window.location.hash.slice(1) || '/';
+  const parts = path.split('/');
+  
+  if (parts[1] === 'service' && parts[2]) {
+    const service = content.services.find(s => s.id === parts[2]);
+    renderService(service);
+  } else if (parts[1] === 'prompt' && parts[2]) {
+    renderPrompt(parts[2]);
+  } else if (parts[1] === 'tips') {
     renderTips();
-  } else if (hash === 'tools') {
+  } else if (parts[1] === 'tools') {
     renderTools();
-  } else if (hash.startsWith('service/')) {
-    const id = hash.split('/')[1];
-    const service = content.services.find(s => s.id === id);
-    if (service) renderService(service);
-    else root.innerHTML = '<p>Service not found</p>';
-  } else if (hash.startsWith('prompt/')) {
-    const id = hash.split('/')[1];
-    renderPrompt(id);
+  } else if (parts[1] === 'styles') {
+    renderStyles();
+  } else {
+    renderHome();
   }
 }
 
-globalThis.addEventListener('hashchange', router);
-globalThis.addEventListener('DOMContentLoaded', router);
+router();
+window.addEventListener('hashchange', router);

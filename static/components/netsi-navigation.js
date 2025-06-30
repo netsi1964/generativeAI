@@ -77,6 +77,7 @@ class NetsiNavigation extends HTMLElement {
           <li><a href="${spaPrefix}#/">Home</a></li>
           <li><a href="${promptToolPath}">Prompt Tool</a></li>
           <li><a href="${spaPrefix}#/tools">Tools</a></li>
+          <li><a href="${spaPrefix}#/styles">Styles</a></li>
           <li tabindex="0">
             <a href="javascript:void(0)">Services ▼</a>
             <ul class="dropdown">
