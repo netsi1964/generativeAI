@@ -5,7 +5,7 @@
       "name": "Grok 3",
       "description": "Here are some example generated prompts using Grok 3 service.",
       "url": "https://grok.com",
-      "imageFolder": "../images/grok3/",
+      "imageFolder": "/generativeAI/images/grok3/",
       "prompts": ["be-happy", "thai-woman", "cityscape-night.jpg", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
     },
     {
@@ -13,7 +13,7 @@
       "name": "GPT-4o",
       "description": "Here are some example generated prompts using GPT-4o.",
       "url": "https://chat.openai.com/gpt-4o",
-      "imageFolder": "../images/gpt4o/",
+      "imageFolder": "/generativeAI/images/gpt4o/",
       "prompts": ["be-happy", "thai-woman.jpg", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg:'A cinematic, 16:9 illustration of a happy family of four enjoying their vacation in Thailand. The mother is in the foreground taking a selfie, with a bright, joyful smile. Behind her, the father, a young son, and a young daughter are all smiling warmly, standing close together within arms length of the camera. The background shows a classic Thai beach scene: soft white sand, crystal-clear turquoise waters, tall palm trees swaying in the breeze, and a limestone cliff or island in the distance. The lighting is warm and sunny, and the color palette vibrant, capturing the essence of a perfect tropical vacation. The image should feel like a moment captured in a high-quality DSLR photo, blending realism with a painterly charm.'", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
     },
     {
@@ -21,7 +21,7 @@
       "name": "Google Imagen 3.0",
       "description": "Here are some example generated prompts using Google Imagen 3.0.",
       "url": "https://aistudio.google.com/generate-image",
-      "imageFolder": "../images/imagen30/",
+      "imageFolder": "/generativeAI/images/imagen30/",
       "prompts": ["be-happy.png", "thai-woman.png", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo", "sketch-woman-cliff.png", "hopeful-coffee.png"]
     },
     {
@@ -29,7 +29,7 @@
       "name": "lexica.art",
       "description": "Here are some example generated prompts using lexica.art.",
       "url": "https://lexica.art/",
-      "imageFolder": "../images/lexica.art/",
+      "imageFolder": "/generativeAI/images/lexica.art/",
       "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
     },
     {
@@ -37,7 +37,7 @@
       "name": "clipdrop.co",
       "description": "Here are some example generated prompts using clipdrop.co.",
       "url": "https://clipdrop.co/",
-      "imageFolder": "../images/clipdrop.co/",
+      "imageFolder": "/generativeAI/images/clipdrop.co/",
       "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo.png", "sketch-woman-cliff.png", "hopeful-coffee.png"]
     },
     {
@@ -45,7 +45,7 @@
       "name": "Dall-e3 (chat.openai.com)",
       "description": "Here are some example generated prompts using Dall-e3 (chat.openai.com).",
       "url": "https://chat.openai.com/",
-      "imageFolder": "../images/dall_e_3/",
+      "imageFolder": "/generativeAI/images/dall_e_3/",
       "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest", "melancholy-paris", "family-thailand", "vulture-photo.webp", "sketch-woman-cliff.webp", "hopeful-coffee"]
     },
     {
@@ -53,7 +53,7 @@
       "name": "app.leonardo.ai",
       "description": "Here are some example generated prompts using app.leonardo.ai.",
       "url": "https://app.leonardo.ai/",
-      "imageFolder": "../images/app.leonardo.ai/",
+      "imageFolder": "/generativeAI/images/app.leonardo.ai/",
       "prompts": ["be-happy", "thai-woman.jpg", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
     },
     {
@@ -61,7 +61,7 @@
       "name": "runwayml.com",
       "description": "Here are some example generated prompts using runwayml.com.",
       "url": "https://runwayml.com/",
-      "imageFolder": "../images/runwayml.com/",
+      "imageFolder": "/generativeAI/images/runwayml.com/",
       "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
     },
     {
@@ -69,7 +69,7 @@
       "name": "playground.com",
       "description": "Here are some example generated prompts using playground.com.",
       "url": "https://playground.com/",
-      "imageFolder": "../images/playground.com/",
+      "imageFolder": "/generativeAI/images/playground.com/",
       "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo.png", "sketch-woman-cliff.png", "hopeful-coffee.png"]
     },
     {
@@ -77,7 +77,7 @@
       "name": "midjourney",
       "description": "Here are some example generated prompts using midjourney.",
       "url": "https://midjourney.com/",
-      "imageFolder": "../images/midjourney/",
+      "imageFolder": "/generativeAI/images/midjourney/",
       "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo.png", "sketch-woman-cliff.png", "hopeful-coffee.png"]
     }
   ],
