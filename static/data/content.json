@@ -6,7 +6,17 @@
       "description": "Here are some example generated prompts using Grok 3 service.",
       "url": "https://grok.com",
       "imageFolder": "/generativeAI/images/grok3/",
-      "prompts": ["be-happy", "thai-woman", "cityscape-night.jpg", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
+      "prompts": [
+        "be-happy",
+        "thai-woman",
+        "cityscape-night.jpg",
+        "awakening-forest.jpg",
+        "melancholy-paris.jpg",
+        "family-thailand.jpg",
+        "vulture-photo",
+        "sketch-woman-cliff",
+        "hopeful-coffee.jpg"
+      ]
     },
     {
       "id": "gpt4o",
@@ -14,7 +24,17 @@
       "description": "Here are some example generated prompts using GPT-4o.",
       "url": "https://chat.openai.com/gpt-4o",
       "imageFolder": "/generativeAI/images/gpt4o/",
-      "prompts": ["be-happy", "thai-woman.jpg", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg:'A cinematic, 16:9 illustration of a happy family of four enjoying their vacation in Thailand. The mother is in the foreground taking a selfie, with a bright, joyful smile. Behind her, the father, a young son, and a young daughter are all smiling warmly, standing close together within arms length of the camera. The background shows a classic Thai beach scene: soft white sand, crystal-clear turquoise waters, tall palm trees swaying in the breeze, and a limestone cliff or island in the distance. The lighting is warm and sunny, and the color palette vibrant, capturing the essence of a perfect tropical vacation. The image should feel like a moment captured in a high-quality DSLR photo, blending realism with a painterly charm.'", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
+      "prompts": [
+        "be-happy",
+        "thai-woman.jpg",
+        "cityscape-night",
+        "awakening-forest.jpg",
+        "melancholy-paris.jpg",
+        "family-thailand.jpg:'A cinematic, 16:9 illustration of a happy family of four enjoying their vacation in Thailand. The mother is in the foreground taking a selfie, with a bright, joyful smile. Behind her, the father, a young son, and a young daughter are all smiling warmly, standing close together within arms length of the camera. The background shows a classic Thai beach scene: soft white sand, crystal-clear turquoise waters, tall palm trees swaying in the breeze, and a limestone cliff or island in the distance. The lighting is warm and sunny, and the color palette vibrant, capturing the essence of a perfect tropical vacation. The image should feel like a moment captured in a high-quality DSLR photo, blending realism with a painterly charm.'",
+        "vulture-photo",
+        "sketch-woman-cliff",
+        "hopeful-coffee.jpg"
+      ]
     },
     {
       "id": "imagen30",
@@ -22,7 +42,17 @@
       "description": "Here are some example generated prompts using Google Imagen 3.0.",
       "url": "https://aistudio.google.com/generate-image",
       "imageFolder": "/generativeAI/images/imagen30/",
-      "prompts": ["be-happy.png", "thai-woman.png", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo", "sketch-woman-cliff.png", "hopeful-coffee.png"]
+      "prompts": [
+        "be-happy.png",
+        "thai-woman.png",
+        "cityscape-night",
+        "awakening-forest.png",
+        "melancholy-paris.png",
+        "family-thailand.png",
+        "vulture-photo",
+        "sketch-woman-cliff.png",
+        "hopeful-coffee.png"
+      ]
     },
     {
       "id": "lexica.art",
@@ -30,7 +60,17 @@
       "description": "Here are some example generated prompts using lexica.art.",
       "url": "https://lexica.art/",
       "imageFolder": "/generativeAI/images/lexica.art/",
-      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
+      "prompts": [
+        "be-happy",
+        "thai-woman",
+        "cityscape-night",
+        "awakening-forest.jpg",
+        "melancholy-paris.jpg",
+        "family-thailand.jpg",
+        "vulture-photo",
+        "sketch-woman-cliff",
+        "hopeful-coffee.jpg"
+      ]
     },
     {
       "id": "clipdrop.co",
@@ -38,7 +78,17 @@
       "description": "Here are some example generated prompts using clipdrop.co.",
       "url": "https://clipdrop.co/",
       "imageFolder": "/generativeAI/images/clipdrop.co/",
-      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo.png", "sketch-woman-cliff.png", "hopeful-coffee.png"]
+      "prompts": [
+        "be-happy",
+        "thai-woman",
+        "cityscape-night",
+        "awakening-forest.png",
+        "melancholy-paris.png",
+        "family-thailand.png",
+        "vulture-photo.png",
+        "sketch-woman-cliff.png",
+        "hopeful-coffee.png"
+      ]
     },
     {
       "id": "chat.openai.com",
@@ -46,7 +96,17 @@
       "description": "Here are some example generated prompts using Dall-e3 (chat.openai.com).",
       "url": "https://chat.openai.com/",
       "imageFolder": "/generativeAI/images/dall_e_3/",
-      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest", "melancholy-paris", "family-thailand", "vulture-photo.webp", "sketch-woman-cliff.webp", "hopeful-coffee"]
+      "prompts": [
+        "be-happy",
+        "thai-woman",
+        "cityscape-night",
+        "awakening-forest",
+        "melancholy-paris",
+        "family-thailand",
+        "vulture-photo.webp",
+        "sketch-woman-cliff.webp",
+        "hopeful-coffee"
+      ]
     },
     {
       "id": "app.leonardo.ai",
@@ -54,7 +114,17 @@
       "description": "Here are some example generated prompts using app.leonardo.ai.",
       "url": "https://app.leonardo.ai/",
       "imageFolder": "/generativeAI/images/app.leonardo.ai/",
-      "prompts": ["be-happy", "thai-woman.jpg", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
+      "prompts": [
+        "be-happy",
+        "thai-woman.jpg",
+        "cityscape-night",
+        "awakening-forest.jpg",
+        "melancholy-paris.jpg",
+        "family-thailand.jpg",
+        "vulture-photo",
+        "sketch-woman-cliff",
+        "hopeful-coffee.jpg"
+      ]
     },
     {
       "id": "runwayml.com",
@@ -62,7 +132,17 @@
       "description": "Here are some example generated prompts using runwayml.com.",
       "url": "https://runwayml.com/",
       "imageFolder": "/generativeAI/images/runwayml.com/",
-      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.jpg", "melancholy-paris.jpg", "family-thailand.jpg", "vulture-photo", "sketch-woman-cliff", "hopeful-coffee.jpg"]
+      "prompts": [
+        "be-happy",
+        "thai-woman",
+        "cityscape-night",
+        "awakening-forest.jpg",
+        "melancholy-paris.jpg",
+        "family-thailand.jpg",
+        "vulture-photo",
+        "sketch-woman-cliff",
+        "hopeful-coffee.jpg"
+      ]
     },
     {
       "id": "playground.com",
@@ -70,7 +150,17 @@
       "description": "Here are some example generated prompts using playground.com.",
       "url": "https://playground.com/",
       "imageFolder": "/generativeAI/images/playground.com/",
-      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo.png", "sketch-woman-cliff.png", "hopeful-coffee.png"]
+      "prompts": [
+        "be-happy",
+        "thai-woman",
+        "cityscape-night",
+        "awakening-forest.png",
+        "melancholy-paris.png",
+        "family-thailand.png",
+        "vulture-photo.png",
+        "sketch-woman-cliff.png",
+        "hopeful-coffee.png"
+      ]
     },
     {
       "id": "midjourney",
@@ -78,7 +168,17 @@
       "description": "Here are some example generated prompts using midjourney.",
       "url": "https://midjourney.com/",
       "imageFolder": "/generativeAI/images/midjourney/",
-      "prompts": ["be-happy", "thai-woman", "cityscape-night", "awakening-forest.png", "melancholy-paris.png", "family-thailand.png", "vulture-photo.png", "sketch-woman-cliff.png", "hopeful-coffee.png"]
+      "prompts": [
+        "be-happy",
+        "thai-woman",
+        "cityscape-night",
+        "awakening-forest.png",
+        "melancholy-paris.png",
+        "family-thailand.png",
+        "vulture-photo.png",
+        "sketch-woman-cliff.png",
+        "hopeful-coffee.png"
+      ]
     }
   ],
   "prompts": [
@@ -139,13 +239,26 @@
   ],
   "styles": [
     {
+      "id": "generic_comic_strip",
+      "style": "Generic Comic Strip",
+      "artist": "Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "A generic placeholder for early 20th-century newspaper comic strips, inspired by the vibrant and varied styles of the era. No specific artist or work is referenced, allowing for creative interpretation within the public domain. EU: ✅ / USA: ✅",
+      "stylePrompt": "In the style of an early 20th-century newspaper comic strip, featuring bold black ink outlines, minimal shading, and vibrant or monochromatic color schemes depending on the publication. Characters are expressive with exaggerated features like large eyes or exaggerated gestures, set against simple, hand-drawn backgrounds that emphasize humor or adventure. Use a grainy paper texture to evoke the feel of vintage newsprint.",
+      "generated": "2025-07-05T12:32:39.242Z",
+      "tokensUsed": null
+    },
+    {
       "id": "popeye",
       "style": "Popeye",
       "artist": "Elzie Crisler Segar",
       "eu": true,
       "usa": true,
       "info": "The earliest strips from 1929 by E.C. Segar (d. 1938) are in the public domain in both regions. URL: https://en.wikipedia.org/wiki/Popeye",
-      "stylePrompt": "In the style of a 1929 gritty, black-and-white newspaper comic strip, with characters having bulbous features and squinting eyes, drawn with rough, thick ink lines."
+      "stylePrompt": "In the gritty, high-contrast black-and-white style of a 1929 newspaper comic strip, drawn with rough, thick ink lines and cross-hatching for texture. Characters have bulbous noses, squinting eyes, and exaggerated, muscular builds, with a rugged, working-class aesthetic. Backgrounds depict coastal or urban scenes with cluttered details like barrels, ropes, or tenements, rendered on a slightly yellowed, textured newsprint surface. Emphasize dynamic action poses and slapstick humor.",
+      "generated": "2025-07-05T12:32:50.551Z",
+      "tokensUsed": null
     },
     {
       "id": "tintin",
@@ -153,116 +266,142 @@
       "artist": "Hergé",
       "eu": false,
       "usa": true,
-      "info": "Only the first story, \"Tintin in the Land of the Soviets\" (1929), is in the US public domain. All of Hergé's (d. 1983) works are copyrighted in the EU. URL: https://en.wikipedia.org/wiki/The_Adventures_of_Tintin",
-      "stylePrompt": "In the Belgian \"ligne claire\" art style of 1929, using clear, strong lines of uniform weight, with no hatching and a contrast between realistic backgrounds and cartoony characters."
+      "info": "Only the first story, 'Tintin in the Land of the Soviets' (1929), is in the US public domain. All of Hergé's (d. 1983) works are copyrighted in the EU. URL: https://en.wikipedia.org/wiki/The_Adventures_of_Tintin",
+      "stylePrompt": "In the Belgian 'ligne claire' style of 1929, characterized by clean, uniform-weight black lines and flat, vibrant colors with no hatching or gradients. Characters are cartoony with simplified, expressive faces, while backgrounds are highly detailed and realistic, depicting exotic locales like deserts or cities with architectural precision. Compositions are balanced, with a focus on clarity and narrative flow, set against a crisp, white paper texture.",
+      "generated": "2025-07-05T12:33:02.578Z",
+      "tokensUsed": null
     },
     {
-      "id": "buck-rogers",
+      "id": "buck_rogers",
       "style": "Buck Rogers",
       "artist": "Philip F. Nowlan, Dick Calkins",
       "eu": false,
       "usa": true,
       "info": "The original comic strip from 1929 is in the US public domain. Not in the EU, as Calkins died in 1962. URL: https://en.wikipedia.org/wiki/Buck_Rogers",
-      "stylePrompt": "In the style of a 1929 retro-futuristic science fiction comic strip, featuring Art Deco-inspired spaceships, ray guns, and fantastical alien worlds, with a pulp adventure feel."
+      "stylePrompt": "In the retro-futuristic style of a 1929 science fiction comic strip, featuring sleek Art Deco-inspired spaceships, ray guns with glowing beams, and angular alien worlds with crystalline structures. Use bold black outlines, limited shading, and a palette of muted silvers, blues, and oranges to evoke pulp adventure. Characters wear streamlined uniforms or helmets, set against starry skies or bizarre planetary landscapes, with a grainy newsprint texture.",
+      "generated": "2025-07-05T12:33:14.757Z",
+      "tokensUsed": null
     },
     {
-      "id": "little-nemo",
+      "id": "little_nemo",
       "style": "Little Nemo",
       "artist": "Winsor McCay",
       "eu": true,
       "usa": true,
       "info": "Created in 1905 and solidly in the public domain in both regions (McCay d. 1934). URL: https://en.wikipedia.org/wiki/Little_Nemo",
-      "stylePrompt": "In a surreal Art Nouveau comic panel style, characterized by elaborate details, fantastical architecture, vibrant pastel colors, and dream-like logic."
+      "stylePrompt": "In a surreal, dreamlike Art Nouveau comic panel style, featuring flowing, organic lines and intricate, fantastical architecture like spiraling towers or oversized furniture. Use a vibrant palette of pastel pinks, blues, and yellows, with delicate gradients and fine detailing. Characters are whimsical, with exaggerated proportions, set in shifting, nonsensical dreamscapes that defy gravity and logic, rendered on a smooth, high-quality paper texture.",
+      "generated": "2025-07-05T12:33:25.871Z",
+      "tokensUsed": null
     },
     {
-      "id": "the-katzenjammer-kids",
+      "id": "katzenjammer_kids",
       "style": "The Katzenjammer Kids",
       "artist": "Rudolph Dirks",
       "eu": false,
       "usa": true,
       "info": "The early strips from 1897 are in the US public domain, but not the EU, as Dirks died in 1968. URL: https://en.wikipedia.org/wiki/The_Katzenjammer_Kids",
-      "stylePrompt": "In the style of an early 20th-century cartoon, defined by slapstick humor, chaotic energy, and simple linework, often featuring speech balloons with accented text."
+      "stylePrompt": "In the chaotic, early 20th-century cartoon style, featuring bold, simple black outlines and minimal color (reds, blues, yellows) on a textured newsprint background. Characters are mischievous, with exaggerated expressions and dynamic poses, engaged in slapstick pranks. Backgrounds are cluttered with everyday objects like furniture or tools, and speech balloons contain accented, humorous dialogue in a playful, hand-lettered font.",
+      "generated": "2025-07-05T12:33:37.024Z",
+      "tokensUsed": null
     },
     {
-      "id": "krazy-kat",
+      "id": "krazy_kat",
       "style": "Krazy Kat",
       "artist": "George Herriman",
       "eu": true,
       "usa": true,
       "info": "Started in 1913. It is in the public domain in both regions (Herriman d. 1944). URL: https://en.wikipedia.org/wiki/Krazy_Kat",
-      "stylePrompt": "In a surrealist black-and-white ink wash style, featuring ever-shifting, minimalist desert landscapes and poetic, nonsensical dialogue."
+      "stylePrompt": "In a surrealist black-and-white ink wash style, featuring minimalist, ever-shifting desert landscapes with abstract cacti, mesas, and crescent moons. Use loose, expressive brushstrokes and heavy ink splashes for texture, with characters drawn in a loose, whimsical style. Dialogue is poetic and nonsensical, written in a quirky, hand-drawn font, set against a slightly yellowed, textured paper background.",
+      "generated": "2025-07-05T12:33:48.707Z",
+      "tokensUsed": null
     },
     {
-      "id": "bringing-up-father",
+      "id": "bringing_up_father",
       "style": "Bringing Up Father",
       "artist": "George McManus",
       "eu": true,
       "usa": true,
       "info": "Debuted in 1913. In the public domain in both regions, as McManus died in 1954 (PD in EU from Jan 1, 2025). URL: https://en.wikipedia.org/wiki/Bringing_Up_Father",
-      "stylePrompt": "In a 1910s Art Deco comic strip style, depicting high-society life with elegant fashion, comedic domestic situations, and clean, graceful lines."
+      "stylePrompt": "In a refined 1910s Art Deco comic strip style, featuring elegant, clean lines and a muted palette of greens, golds, and creams. Characters wear stylish, high-society clothing like tuxedos or flapper dresses, set in opulent interiors with geometric patterns or luxurious cityscapes. Compositions are balanced, with a focus on domestic comedy, rendered on a crisp, white paper texture with subtle newsprint grain.",
+      "generated": "2025-07-05T12:33:59.740Z",
+      "tokensUsed": null
     },
     {
-      "id": "gasoline-alley",
+      "id": "gasoline_alley",
       "style": "Gasoline Alley",
       "artist": "Frank King",
       "eu": false,
       "usa": true,
       "info": "The early strips from 1918 are in the US public domain, but not the EU, as King died in 1969. URL: https://en.wikipedia.org/wiki/Gasoline_Alley",
-      "stylePrompt": "In the style of an early American suburbia comic strip, known for its warm, detailed ink drawings, gentle humor, and focus on family life."
+      "stylePrompt": "In the warm, nostalgic style of an early 20th-century American suburbia comic strip, featuring detailed, hand-drawn ink illustrations with soft cross-hatching. Use a cozy palette of browns, greens, and soft yellows to depict small-town scenes, family homes, or garages. Characters are relatable, with expressive faces and casual clothing, engaging in gentle, heartwarming humor, set on a textured, slightly aged newsprint surface.",
+      "generated": "2025-07-05T12:34:12.680Z",
+      "tokensUsed": null
     },
     {
-      "id": "felix-the-cat",
+      "id": "felix_the_cat",
       "style": "Felix the Cat",
       "artist": "Pat Sullivan, Otto Messmer",
       "eu": false,
       "usa": true,
       "info": "The earliest versions from 1919 are in the US public domain, but not the EU due to Messmer (d. 1983). URL: https://en.wikipedia.org/wiki/Felix_the_Cat",
-      "stylePrompt": "In the style of a silent film era cartoon, characterized by bold black-and-white graphics, surreal transformations, and characters with wide eyes and big grins."
+      "stylePrompt": "In the bold, black-and-white style of a silent film-era cartoon, featuring high-contrast ink drawings and surreal, fluid transformations (e.g., objects morphing into characters). Characters have wide, gleaming eyes, toothy grins, and exaggerated movements, set against minimalist urban or fantastical backgrounds. Use a grainy, flickering texture reminiscent of old film reels to evoke a playful, mischievous tone.",
+      "generated": "2025-07-05T12:34:26.142Z",
+      "tokensUsed": null
     },
     {
-      "id": "the-gumps",
+      "id": "the_gumps",
       "style": "The Gumps",
       "artist": "Sidney Smith",
       "eu": true,
       "usa": true,
       "info": "Started in 1917. In the public domain in both regions (Smith d. 1935). URL: https://en.wikipedia.org/wiki/The_Gumps",
-      "stylePrompt": "In a 1920s comic strip style about an ordinary middle-class family, defined by gentle domestic humor and a clear, simple line art style."
+      "stylePrompt": "In a 1920s comic strip style, featuring clean, straightforward black ink lines and a limited palette of reds, blues, and yellows. Depict middle-class family life with cozy interiors, period clothing, and gentle domestic humor. Backgrounds are detailed but uncluttered, with furniture or neighborhood scenes, rendered on a slightly yellowed newsprint texture to evoke everyday warmth and relatability.",
+      "generated": "2025-07-05T12:34:41.833Z",
+      "tokensUsed": null
     },
     {
-      "id": "mutt-and-jeff",
+      "id": "mutt_and_jeff",
       "style": "Mutt and Jeff",
       "artist": "Bud Fisher",
       "eu": true,
       "usa": true,
       "info": "Started in 1907. In the public domain in both regions, as Fisher died in 1954 (PD in EU from Jan 1, 2025). URL: https://en.wikipedia.org/wiki/Mutt_and_Jeff",
-      "stylePrompt": "In the style of an early newspaper comic, featuring slapstick comedy and dynamic, simple black-and-white art centered on a duo of mismatched characters."
+      "stylePrompt": "In the energetic, early 20th-century newspaper comic style, featuring bold, dynamic black ink lines and minimal color (black, white, with occasional reds or blues). Characters are a tall, lanky figure and a short, stout companion, engaged in slapstick antics with exaggerated expressions. Backgrounds are simple, focusing on urban or sports settings, rendered on a textured newsprint surface with a playful, chaotic energy.",
+      "generated": "2025-07-05T12:34:53.426Z",
+      "tokensUsed": null
     },
     {
-      "id": "polly-and-her-pals",
+      "id": "polly_and_her_pals",
       "style": "Polly and Her Pals",
       "artist": "Cliff Sterrett",
       "eu": false,
       "usa": true,
       "info": "Started in 1912. The early strips are in the US public domain, but not the EU (Sterrett d. 1964). URL: https://en.wikipedia.org/wiki/Polly_and_Her_Pals",
-      "stylePrompt": "In a high-fashion comic strip style influenced by Art Deco and Cubism, featuring surreal, stylized backgrounds and fashionable 1920s clothing."
+      "stylePrompt": "In a vibrant, Art Deco-inspired comic strip style with Cubist influences, featuring bold, angular lines and a bright palette of reds, yellows, and greens. Backgrounds are surreal, with abstract geometric shapes or stylized cityscapes, while characters wear fashionable 1920s flapper dresses or suits. Compositions are dynamic, with a whimsical, experimental feel, set on a clean, white paper texture.",
+      "generated": "2025-07-05T12:35:07.043Z",
+      "tokensUsed": null
     },
     {
-      "id": "barney-google",
+      "id": "barney_google",
       "style": "Barney Google",
       "artist": "Billy DeBeck",
       "eu": true,
       "usa": true,
       "info": "The original strips from 1919 are in the public domain (DeBeck d. 1942). URL: https://en.wikipedia.org/wiki/Barney_Google_and_Snuffy_Smith",
-      "stylePrompt": "In a 1920s cartoony comic strip style, featuring characters with large \"googly\" eyes, often involved in sports, gambling, and absurd situations."
+      "stylePrompt": "In a 1920s cartoony comic strip style, featuring characters with large, expressive 'googly' eyes and exaggerated proportions. Use bold black outlines and a limited palette of primary colors (reds, blues, yellows) to depict absurd, humorous scenes of sports, gambling, or rural life. Backgrounds are lively, with dynamic lines and cluttered details, rendered on a textured, slightly aged newsprint surface.",
+      "generated": "2025-07-05T12:35:20.973Z",
+      "tokensUsed": null
     },
     {
-      "id": "toonerville-folks",
+      "id": "toonerville_folks",
       "style": "Toonerville Folks",
       "artist": "Fontaine Fox",
       "eu": false,
       "usa": true,
       "info": "Started in 1908. The early strips are in the US public domain, but not the EU (Fox d. 1964). URL: https://en.wikipedia.org/wiki/Toonerville_Folks",
-      "stylePrompt": "In the style of a single-panel cartoon depicting eccentric small-town characters, defined by a folksy, humorous, and observational tone."
+      "stylePrompt": "In the style of a single-panel, early 20th-century cartoon, featuring eccentric small-town characters with quirky expressions and period clothing. Use clean, bold ink lines and a limited color palette of earth tones and pastels to depict humorous, observational scenes of trolleys, shops, or community life. Render on a textured newsprint background with a folksy, nostalgic tone.",
+      "generated": "2025-07-05T12:35:39.067Z",
+      "tokensUsed": null
     },
     {
       "id": "zorro",
@@ -270,233 +409,285 @@
       "artist": "Johnston McCulley",
       "eu": false,
       "usa": true,
-      "info": "The first story, \"The Curse of Capistrano\" (1919), is in the US public domain, but not the EU (McCulley d. 1958). URL: https://en.wikipedia.org/wiki/Zorro",
-      "stylePrompt": "In a pulp adventure style set in Spanish California, characterized by dramatic, shadowy visuals of a masked hero fighting for justice."
+      "info": "The first story, 'The Curse of Capistrano' (1919), is in the US public domain, but not the EU (McCulley d. 1958). URL: https://en.wikipedia.org/wiki/Zorro",
+      "stylePrompt": "In a dramatic, pulp adventure style set in Spanish California, featuring shadowy, high-contrast black-and-white visuals with bold ink lines. Depict a masked hero in a cape and hat, wielding a sword, against moonlit haciendas or rugged landscapes. Use deep blacks, stark whites, and minimal shading to evoke mystery and action, rendered on a textured, pulpy paper surface.",
+      "generated": "2025-07-05T12:35:50.541Z",
+      "tokensUsed": null
     },
     {
-      "id": "little-annie-rooney",
+      "id": "little_annie_rooney",
       "style": "Little Annie Rooney",
       "artist": "Darrell McClure",
       "eu": false,
       "usa": true,
-      "info": "Started in 1927 and is in the US public domain, but not the EU (McClure d. 1987). URL: https://en.wikipedia.org/wiki/Little_Annie_ Rooney",
-      "stylePrompt": "In the style of a 1920s adventure comic strip, telling heartwarming and dramatic stories with a focus on a resilient, wandering protagonist."
+      "info": "Started in 1927 and is in the US public domain, but not the EU (McClure d. 1987). URL: https://en.wikipedia.org/wiki/Little_Annie_Rooney",
+      "stylePrompt": "In the heartwarming, 1920s adventure comic strip style, featuring soft, detailed ink lines and a warm palette of blues, pinks, and yellows. Depict a resilient young protagonist in tattered clothing, set against urban or rural scenes with detailed buildings or landscapes. Emphasize emotional storytelling and dynamic compositions, rendered on a slightly yellowed newsprint texture.",
+      "generated": "2025-07-05T12:36:06.895Z",
+      "tokensUsed": null
     },
     {
-      "id": "the-yellow-kid",
+      "id": "the_yellow_kid",
       "style": "The Yellow Kid",
       "artist": "Richard F. Outcault",
       "eu": true,
       "usa": true,
       "info": "One of the first comic strips (1895). Solidly in the public domain (Outcault d. 1928). URL: https://en.wikipedia.org/wiki/The_Yellow_Kid",
-      "stylePrompt": "In the style of a late 19th-century newspaper comic, featuring chaotic urban street scenes with multiple characters and dialogue written on clothing."
+      "stylePrompt": "In the chaotic, late 19th-century newspaper comic style, featuring crowded urban street scenes with multiple characters in tattered clothing. Use bold, uneven ink lines and a limited palette of yellows, reds, and blues, with dialogue written directly on characters’ clothing or in balloons. Backgrounds are cluttered with tenements or markets, rendered on a coarse, yellowed newsprint texture.",
+      "generated": "2025-07-05T12:36:23.690Z",
+      "tokensUsed": null
     },
     {
-      "id": "happy-hooligan",
+      "id": "happy_hooligan",
       "style": "Happy Hooligan",
       "artist": "Frederick Burr Opper",
       "eu": true,
       "usa": true,
       "info": "A pioneer from 1900. Is in the public domain (Opper d. 1937). URL: https://en.wikipedia.org/wiki/Happy_Hooligan",
-      "stylePrompt": "In a Vaudeville-era comic strip style, using simple, clear line work to depict slapstick comedy, often featuring a gentle tramp character."
+      "stylePrompt": "In a Vaudeville-era comic strip style, featuring clean, bold ink lines and a limited color palette of reds, blues, and yellows. Depict a gentle tramp character with a patched coat and tin-can hat, engaged in slapstick misadventures. Backgrounds are simple, with urban or rural settings, rendered on a textured newsprint surface with a lighthearted, comedic tone.",
+      "generated": "2025-07-05T12:36:38.436Z",
+      "tokensUsed": null
     },
     {
-      "id": "fritzi-ritz",
+      "id": "fritzi_ritz",
       "style": "Fritzi Ritz",
       "artist": "Larry Whittington",
       "eu": false,
       "usa": true,
       "info": "The early strips from 1922 are in the US public domain. EU status is complex due to later artists. URL: https://en.wikipedia.org/wiki/Fritzi_Ritz",
-      "stylePrompt": "In a 1920s \"flapper\" comic strip style, defined by clean, stylish Art Deco-inspired drawings of a fashionable young woman in humorous daily situations."
+      "stylePrompt": "In a stylish, 1920s 'flapper' comic strip style, featuring clean, elegant Art Deco-inspired lines and a vibrant palette of reds, greens, and golds. Depict a fashionable young woman in chic dresses, set against geometric cityscapes or jazz-age interiors. Compositions are sleek and humorous, rendered on a crisp, white paper texture with a nod to 1920s glamour.",
+      "generated": "2025-07-05T12:36:52.376Z",
+      "tokensUsed": null
     },
     {
-      "id": "gods-man",
+      "id": "gods_man",
       "style": "God's Man",
       "artist": "Lynd Ward",
       "eu": false,
       "usa": true,
       "info": "This wordless novel from 1929 is in the US public domain, but not the EU (Ward d. 1985). URL: https://en.wikipedia.org/wiki/Gods%27_Man",
-      "stylePrompt": "In a silent, narrative style using Expressionist woodcuts, characterized by stark black-and-white contrast and dramatic, emotional imagery."
+      "stylePrompt": "In a dramatic, Expressionist woodcut style, featuring stark black-and-white contrasts and angular, textured lines. Depict emotional, symbolic scenes of human struggle or triumph, with exaggerated, sculpted figures and surreal, shadowy backgrounds. Use deep blacks and sharp whites to evoke a moody, narrative-driven aesthetic, rendered on a rough, woodblock-like texture.",
+      "generated": "2025-07-05T12:37:05.816Z",
+      "tokensUsed": null
     },
     {
-      "id": "ukiyo-e",
+      "id": "ukiyo_e",
       "style": "Ukiyo-e",
-      "artist": "Japan / Hokusai, Hiroshige",
+      "artist": "Hokusai, Hiroshige",
       "eu": true,
       "usa": true,
       "info": "A genre of Japanese woodblock prints and paintings produced between the 17th and 20th centuries, featuring subjects from history, landscapes, and urban life. URL: https://en.wikipedia.org/wiki/Ukiyo-e",
-      "stylePrompt": "In the Japanese Ukiyo-e woodblock print style, using bold outlines, flat areas of color, and asymmetrical compositions to depict stylized landscapes or figures."
+      "stylePrompt": "In the Japanese Ukiyo-e woodblock print style, featuring bold, flowing black outlines and flat areas of vibrant color (blues, reds, greens). Depict stylized landscapes, like waves or mountains, or figures in traditional kimonos, with asymmetrical compositions and delicate details. Use a textured, handmade paper background to evoke the tactile quality of woodblock prints.",
+      "generated": "2025-07-05T12:37:19.723Z",
+      "tokensUsed": null
     },
     {
-      "id": "persian-miniature",
+      "id": "persian_miniature",
       "style": "Persian Miniature",
-      "artist": "Persia (Iran) / Kamal-ud-din Behzad",
+      "artist": "Kamal-ud-din Behzad",
       "eu": true,
       "usa": true,
       "info": "A small, richly detailed painting from a manuscript or book. Known for its intricate details, strong colors, and scenes from mythology and poetry. URL: https://en.wikipedia.org/wiki/Persian_miniature",
-      "stylePrompt": "In the style of a Persian miniature, characterized by intricate details, vibrant jewel-toned colors, gold leaf accents, and a flat perspective for epic or poetic scenes."
+      "stylePrompt": "In the Persian miniature style, featuring intricate, jewel-toned colors (turquoise, crimson, gold) and delicate, ornate details. Depict epic or poetic scenes with elegant figures in flowing robes, set against lush gardens or tiled palaces. Use a flat perspective, gold leaf accents, and intricate floral borders, rendered on a smooth, parchment-like texture.",
+      "generated": "2025-07-05T12:37:34.060Z",
+      "tokensUsed": null
     },
     {
-      "id": "egyptian-mural",
+      "id": "egyptian_mural",
       "style": "Egyptian Mural",
-      "artist": "Ancient Egypt / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "The highly symbolic and stylized art found on the walls of tombs and temples in Ancient Egypt, known for its composite view (profile head, frontal torso). URL: https://en.wikipedia.org/wiki/Art_of_ancient_Egypt",
-      "stylePrompt": "In the style of an Ancient Egyptian mural, featuring figures in profile with frontal eyes, hieroglyphic symbols, and a palette of earthy reds, yellows, black, and blue, on a papyrus or stone texture."
+      "stylePrompt": "In the Ancient Egyptian mural style, featuring figures in profile with frontal eyes and torsos, drawn with precise black outlines and flat colors (reds, yellows, blues, blacks). Depict gods, pharaohs, or daily life scenes with hieroglyphic symbols, set against a papyrus or weathered stone texture. Use a grid-like composition for balance and symbolic storytelling.",
+      "generated": "2025-07-05T12:37:47.470Z",
+      "tokensUsed": null
     },
     {
-      "id": "mayan-codex",
+      "id": "mayan_codex",
       "style": "Mayan Codex",
-      "artist": "Mesoamerica / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "The art style found in pre-Columbian folding books from the Maya civilization, characterized by hieroglyphic script and ritualistic scenes. URL: https://en.wikipedia.org/wiki/Maya_codices",
-      "stylePrompt": "In the style of a Mayan codex, using elegant black and red outlines on fibrous paper, depicting gods and nobles with elaborate headdresses and symbolic glyphs."
+      "stylePrompt": "In the Mayan codex style, featuring elegant black and red outlines on a fibrous, bark-paper texture. Depict gods, nobles, or rituals with elaborate headdresses and symbolic glyphs, using a flat color palette of reds, blacks, and ochres. Compositions are structured with horizontal bands or grids, emphasizing symmetry and ceremonial grandeur.",
+      "generated": "2025-07-05T12:38:01.389Z",
+      "tokensUsed": null
     },
     {
-      "id": "shan-shui",
+      "id": "shan_shui",
       "style": "Shan shui",
-      "artist": "China / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "A style of traditional Chinese landscape painting that involves depicting scenery or natural landscapes, often with a philosophical, monochrome aesthetic. URL: https://en.wikipedia.org/wiki/Shan_shui",
-      "stylePrompt": "In the Chinese Shan shui ink wash painting style, featuring vast, monochromatic landscapes of mountains, rivers, and waterfalls, using expressive, calligraphic brushstrokes."
+      "stylePrompt": "In the Chinese Shan shui ink wash style, featuring vast, monochromatic landscapes of mist-shrouded mountains, rivers, and waterfalls. Use expressive, calligraphic brushstrokes in shades of black and gray, with subtle gradients on rice paper texture. Include minimalistic details like tiny figures or boats to evoke a sense of scale, harmony, and philosophical depth.",
+      "generated": "2025-07-05T12:38:15.553Z",
+      "tokensUsed": null
     },
     {
-      "id": "mughal-miniature",
+      "id": "mughal_miniature",
       "style": "Mughal Miniature",
-      "artist": "Mughal Empire (India) / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "A style of South Asian painting, heavily influenced by Persian miniatures, known for its realistic detail, formal portraiture, and depictions of courtly life. URL: https://en.wikipedia.org/wiki/Mughal_painting",
-      "stylePrompt": "In the style of a Mughal miniature painting, with highly detailed realism, rich colors, intricate borders, and a focus on portraits, royal court scenes, or nature."
+      "stylePrompt": "In the Mughal miniature style, featuring highly detailed, realistic portraits or court scenes with vibrant colors (emerald, ruby, gold). Depict emperors, courtiers, or nature scenes with intricate clothing and jewelry, set against ornate backgrounds with floral or geometric borders. Use a flat perspective and a smooth, parchment-like texture to evoke regal elegance.",
+      "generated": "2025-07-05T12:38:29.261Z",
+      "tokensUsed": null
     },
     {
-      "id": "sumi-e",
+      "id": "sumi_e",
       "style": "Sumi-e",
-      "artist": "Japan & China / Sesshū Tōyō",
+      "artist": "Sesshū Tōyō",
       "eu": true,
       "usa": true,
       "info": "A style of monochrome ink wash painting where subjects are painted with a brush dipped in black ink, emphasizing simplicity, beauty, and spiritualism. URL: https://en.wikipedia.org/wiki/Ink_wash_painting",
-      "stylePrompt": "In the minimalist Sumi-e ink wash style, using varying concentrations of black ink on paper to create expressive, spiritual paintings of nature, like bamboo or mountains."
+      "stylePrompt": "In the minimalist Sumi-e ink wash style, featuring fluid, expressive black ink brushstrokes on textured rice paper. Depict simple yet evocative subjects like bamboo, birds, or mountains, using varying ink concentrations for depth and texture. Emphasize negative space, balance, and a serene, spiritual aesthetic with subtle gray gradients.",
+      "generated": "2025-07-05T12:38:42.695Z",
+      "tokensUsed": null
     },
     {
-      "id": "wayang-kulit",
+      "id": "wayang_kulit",
       "style": "Wayang Kulit",
-      "artist": "Indonesia / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "The art style of traditional shadow puppets from Java and Bali. The puppets are intricately carved from leather to create detailed silhouettes. URL: https://en.wikipedia.org/wiki/Wayang_kulit",
-      "stylePrompt": "In the style of a Wayang Kulit shadow puppet, depicted as an ornate and stylized silhouette with intricate perforated details, seen against a backlit white screen."
+      "stylePrompt": "In the Wayang Kulit shadow puppet style, featuring intricate, stylized silhouettes with perforated details, rendered in black against a glowing, backlit white screen. Depict mythical figures or warriors with elaborate costumes and dynamic poses, using delicate, lace-like patterns to suggest movement and storytelling, evoking a theatrical, mystical atmosphere.",
+      "generated": "2025-07-05T12:38:55.504Z",
+      "tokensUsed": null
     },
     {
-      "id": "aboriginal-dot-art",
+      "id": "aboriginal_dot_art",
       "style": "Aboriginal Dot Art",
-      "artist": "Australia / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "A traditional style of painting based on ancient symbols and stories of the Australian Aboriginal peoples, using intricate patterns of dots to form larger images. URL: https://en.wikipedia.org/wiki/Aboriginal_Australian_art",
-      "stylePrompt": "In the style of Aboriginal dot art, using intricate patterns of dots in earthy tones to create symbolic imagery and maps, often from an aerial or spiritual perspective."
+      "stylePrompt": "In the Aboriginal dot art style, featuring intricate patterns of dots in earthy tones (reds, ochres, whites, blacks) to create symbolic imagery like animals, landscapes, or Dreamtime stories. Use a textured, canvas-like background to depict aerial or spiritual perspectives, with rhythmic, interconnected dot patterns evoking cultural narratives.",
+      "generated": "2025-07-05T12:39:08.465Z",
+      "tokensUsed": null
     },
     {
-      "id": "aztec-codex",
+      "id": "aztec_codex",
       "style": "Aztec Codex",
-      "artist": "Mesoamerica / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
-      "info": "The pictographic and ideographic art style found in manuscripts from the Aztec Empire, characterized by bold outlines and flat fields of color. URL: https://en.wikipedia.org/wiki/Aztec_codices",
-      "stylePrompt": "In the style of an Aztec codex, using thick black outlines and flat areas of bright color to depict gods, warriors, and pictographic stories on animal hide or paper."
+      "info": "The pictographic and ideographic art style found in manuscripts from the Aztec Empire,meet the criteria for public domain status in both regions. URL: https://en.wikipedia.org/wiki/Aztec_codices",
+      "stylePrompt": "In the Aztec codex style, featuring thick, bold black outlines and flat, vibrant colors (reds, blues, yellows) on a textured animal hide or bark paper background. Depict gods, warriors, or rituals with stylized, geometric forms and pictographic symbols, arranged in grid-like or sequential compositions to tell historical or mythological stories.",
+      "generated": "2025-07-05T12:39:20.802Z",
+      "tokensUsed": null
     },
     {
-      "id": "ethiopian-iconography",
+      "id": "ethiopian_iconography",
       "style": "Ethiopian Iconography",
-      "artist": "Ethiopia / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "A unique Christian art tradition, known for its stylized figures with large, almond-shaped eyes, bold colors, and dark outlines, often painted on wood or in manuscripts. URL: https://en.wikipedia.org/wiki/Ethiopian_art",
-      "stylePrompt": "In the style of an Ethiopian religious icon, featuring stylized figures with large, expressive eyes and halos, painted with bold, flat colors and heavy black outlines."
+      "stylePrompt": "In the Ethiopian religious icon style, featuring stylized figures with large, almond-shaped eyes, golden halos, and bold, flat colors (reds, blues, yellows) outlined in heavy black. Depict saints or biblical scenes with symmetrical compositions, set against a textured wood or parchment background, evoking spiritual reverence and cultural tradition.",
+      "generated": "2025-07-05T12:39:32.794Z",
+      "tokensUsed": null
     },
     {
-      "id": "iznik-pottery",
+      "id": "iznik_pottery",
       "style": "Iznik Pottery",
-      "artist": "Turkey / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "A style of decorative ceramic art from the Ottoman Empire, famous for its intricate floral (tulips, carnations) and geometric patterns on a white base. URL: https://en.wikipedia.org/wiki/Iznik_pottery",
-      "stylePrompt": "In the decorative style of Ottoman Iznik pottery, featuring intricate floral and geometric patterns in vibrant cobalt blue, turquoise, and red on a brilliant white background."
+      "stylePrompt": "In the Ottoman Iznik pottery style, featuring intricate floral patterns (tulips, carnations) and geometric designs in vibrant cobalt blue, turquoise, and red against a brilliant white background. Use flowing, symmetrical compositions with delicate, hand-painted details, rendered on a smooth, glazed ceramic texture to evoke elegance and craftsmanship.",
+      "generated": "2025-07-05T12:39:46.578Z",
+      "tokensUsed": null
     },
     {
-      "id": "haida-formline",
+      "id": "haida_formline",
       "style": "Haida Formline",
-      "artist": "North America / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "The traditional art of the Haida people of the Pacific Northwest, characterized by continuous, flowing lines (formlines) that create stylized animal and mythic figures. URL: https://en.wikipedia.org/wiki/Formline_art",
-      "stylePrompt": "In the Haida formline art style, using bold, flowing black and red lines with ovoid and U-form shapes to create a complex, stylized depiction of an animal like an eagle or bear."
+      "stylePrompt": "In the Haida formline art style, featuring bold, flowing black and red lines with ovoid and U-form shapes to create stylized depictions of animals like eagles, ravens, or bears. Use a limited palette of black, red, and white, with intricate, interlocking patterns set against a smooth, wood-like texture, evoking spiritual and cultural significance.",
+      "generated": "2025-07-05T12:39:59.613Z",
+      "tokensUsed": null
     },
     {
       "id": "madhubani",
       "style": "Madhubani",
-      "artist": "India / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "A folk painting style from the Mithila region of India, characterized by its complex geometric patterns, double-line borders, and use of natural dyes. URL: https://en.wikipedia.org/wiki/Madhubani_art",
-      "stylePrompt": "In the Madhubani folk art style, filling the entire canvas with intricate geometric patterns, double-line borders, and figures from mythology, using a pen with bright colors."
+      "stylePrompt": "In the Madhubani folk art style, featuring intricate, hand-drawn geometric patterns and double-line borders filled with vibrant natural dyes (reds, blues, yellows). Depict mythological figures, gods, or nature scenes with stylized, expressive forms, covering the entire canvas in a dense, decorative composition, rendered on a textured paper or cloth background.",
+      "generated": "2025-07-05T12:40:15.227Z",
+      "tokensUsed": null
     },
     {
       "id": "minhwa",
       "style": "Minhwa",
-      "artist": "Korea / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
-      "info": "A genre of Korean folk art known for its vibrant colors, naive or \"primitive\" style, and use of symbolic motifs like tigers, magpies, and flowers. URL: https://en.wikipedia.org/wiki/Minhwa",
-      "stylePrompt": "In the Korean Minhwa folk art style, featuring symbolic animals like a humorous tiger and a magpie, painted with vibrant, bold colors in a naive and optimistic manner."
+      "info": "A genre of Korean folk art known for its vibrant colors, naive or 'primitive' style, and use of symbolic motifs like tigers, magpies, and flowers. URL: https://en.wikipedia.org/wiki/Minhwa",
+      "stylePrompt": "In the Korean Minhwa folk art style, featuring vibrant, bold colors (reds, greens, blues) and a naive, playful aesthetic. Depict symbolic animals like a humorous tiger or magpie, alongside flowers or landscapes, with simple, flat forms and minimal shading. Use a textured paper background to evoke optimism and cultural storytelling.",
+      "generated": "2025-07-05T12:40:29.697Z",
+      "tokensUsed": null
     },
     {
-      "id": "benin-bronze",
+      "id": "benin_bronze",
       "style": "Benin Bronze",
-      "artist": "Kingdom of Benin (Nigeria) / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "Cast-metal plaques and sculptures that decorated the royal palace of the Oba of Benin, known for their stylized realism and detailed depictions of court life. URL: https://en.wikipedia.org/wiki/Benin_Bronzes",
-      "stylePrompt": "In the style of a Benin Bronze relief plaque, depicting stylized figures of kings and warriors in ceremonial dress, cast in a material with a textured bronze patina."
+      "stylePrompt": "In the Benin Bronze relief style, featuring stylized, realistic figures of kings, warriors, or courtiers in ceremonial dress, cast in a textured bronze patina. Use intricate, low-relief details with bold outlines and subtle shading to depict dynamic scenes of court life, set against a metallic, weathered background with cultural symbolism.",
+      "generated": "2025-07-05T12:40:45.968Z",
+      "tokensUsed": null
     },
     {
       "id": "tingatinga",
       "style": "Tingatinga",
-      "artist": "Tanzania / Edward Tingatinga",
+      "artist": "Edward Tingatinga",
       "eu": true,
       "usa": true,
       "info": "A modern East African painting style, characterized by its use of vibrant enamel paints on board and its cartoonish, flat depictions of African wildlife. URL: https://en.wikipedia.org/wiki/Tingatinga_(painting)",
-      "stylePrompt": "In the Tingatinga painting style, using vibrant, glossy enamel paints to create a flat, cartoonish image of African animals against a colorful, decorative background."
+      "stylePrompt": "In the Tingatinga painting style, featuring vibrant, glossy enamel paints (bright reds, blues, yellows) to create flat, cartoonish depictions of African animals like lions or zebras. Use bold black outlines and decorative, colorful backgrounds with simple patterns, rendered on a smooth board texture to evoke a playful, modern African aesthetic.",
+      "generated": "2025-07-05T12:41:00.954Z",
+      "tokensUsed": null
     },
     {
       "id": "thangka",
       "style": "Thangka",
-      "artist": "Tibet / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "A Tibetan Buddhist painting on cotton or silk, typically depicting a Buddhist deity, scene, or mandala, known for its extreme detail and symbolism. URL: https://en.wikipedia.org/wiki/Thangka",
-      "stylePrompt": "In the style of a Tibetan Thangka painting, with a highly detailed and symmetrical composition of a central Buddhist deity surrounded by intricate patterns and smaller figures."
+      "stylePrompt": "In the Tibetan Thangka painting style, featuring a highly detailed, symmetrical composition of a central Buddhist deity with intricate patterns and smaller figures. Use vibrant colors (reds, blues, golds) with delicate gold accents and fine brushwork, set against a textured cotton or silk background, evoking spiritual depth and meditative focus.",
+      "generated": "2025-07-05T12:41:14.853Z",
+      "tokensUsed": null
     },
     {
-      "id": "amate-painting",
+      "id": "amate_painting",
       "style": "Amate Painting",
-      "artist": "Mexico / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "A Mexican folk art style of painting on amate, a fibrous bark paper. The paintings often depict brightly colored birds, animals, and village scenes. URL: https://en.wikipedia.org/wiki/Amate",
-      "stylePrompt": "In the Mexican Amate folk art style, featuring brightly colored, stylized birds and flowers with intricate patterns, painted on a dark, fibrous bark paper texture."
+      "stylePrompt": "In the Mexican Amate folk art style, featuring vibrant, stylized birds, animals, or village scenes with intricate patterns in bright colors (reds, greens, yellows). Use bold black outlines on a dark, fibrous bark paper texture to create a lively, handcrafted aesthetic, with dense compositions that evoke rural Mexican life.",
+      "generated": "2025-07-05T12:41:28.234Z",
+      "tokensUsed": null
     },
     {
       "id": "adinkra",
       "style": "Adinkra",
-      "artist": "Ghana / Various Artists",
+      "artist": "Various Artists",
       "eu": true,
       "usa": true,
       "info": "Visual symbols from the Akan people of Ghana that represent concepts or aphorisms. They are used extensively in fabrics, pottery, and logos. URL: https://en.wikipedia.org/wiki/Adinkra_symbols",
-      "stylePrompt": "In the style of Adinkra printed fabric, featuring repeating geometric symbols stamped in black ink onto a woven, earth-toned cloth background."
+      "stylePrompt": "In the Adinkra printed fabric style, featuring repeating geometric symbols (e.g., spirals, knots) stamped in bold black ink on a woven, earth-toned cloth background (ochres, browns). Arrange symbols in rhythmic, grid-like patterns to convey cultural meanings, evoking a textured, handcrafted aesthetic with a focus on balance and symbolism.",
+      "generated": "2025-07-05T12:41:42.068Z",
+      "tokensUsed": null
     }
   ],
   "tips": [
