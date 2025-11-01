@@ -50,6 +50,47 @@ function sleep(ms: number): Promise<void> {
 }
 
 /**
+ * Detects image file type from binary data by reading magic bytes
+ * @param imageData - The binary image data
+ * @returns The detected file extension or 'jpg' as fallback
+ */
+function detectImageType(imageData: Uint8Array): string {
+  // Check for PNG: 89 50 4E 47 0D 0A 1A 0A
+  if (imageData.length >= 8 && 
+      imageData[0] === 0x89 && imageData[1] === 0x50 && 
+      imageData[2] === 0x4E && imageData[3] === 0x47 && 
+      imageData[4] === 0x0D && imageData[5] === 0x0A && 
+      imageData[6] === 0x1A && imageData[7] === 0x0A) {
+    return 'png';
+  }
+  
+  // Check for JPEG: FF D8 FF
+  if (imageData.length >= 3 && 
+      imageData[0] === 0xFF && imageData[1] === 0xD8 && imageData[2] === 0xFF) {
+    return 'jpg';
+  }
+  
+  // Check for WebP: "WEBP" in header (after RIFF)
+  if (imageData.length >= 12) {
+    const webpCheck = new TextDecoder().decode(imageData.slice(8, 12));
+    if (webpCheck === 'WEBP') {
+      return 'webp';
+    }
+  }
+  
+  // Check for GIF: "GIF87a" or "GIF89a"
+  if (imageData.length >= 6) {
+    const gifCheck = new TextDecoder().decode(imageData.slice(0, 6));
+    if (gifCheck === 'GIF87a' || gifCheck === 'GIF89a') {
+      return 'gif';
+    }
+  }
+  
+  // Default fallback
+  return 'jpg';
+}
+
+/**
  * Finds the gcloud command in common locations
  * @returns The path to gcloud or null if not found
  */
@@ -233,10 +274,37 @@ async function main() {
   for (const style of content.styles) {
     console.log(`\nProcessing style: "${style.style}" (ID: ${style.id})`);
 
-    // Skip if already generated
-    if (style.generated) {
-      console.log(`  - ⏩ Skipping, already generated on: ${style.generated}`);
+    // Check if already generated and file exists (check all common image formats)
+    const possibleExtensions = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
+    let fileExists = false;
+    let existingFilePath = '';
+    
+    for (const ext of possibleExtensions) {
+      const fileName = `${style.id}.${ext}`;
+      const filePath = path.join(IMAGES_DIR, fileName);
+      
+      try {
+        await Deno.stat(filePath);
+        fileExists = true;
+        existingFilePath = filePath;
+        break; // Found a file, stop searching
+      } catch {
+        // Continue to next extension
+      }
+    }
+
+    // Skip if already generated AND file exists
+    if (style.generated && fileExists) {
+      const foundFileName = path.basename(existingFilePath);
+      console.log(`  - ⏩ Skipping, already generated on: ${style.generated} (file exists: ${foundFileName})`);
       continue;
+    }
+
+    // If generated flag is set but file doesn't exist, reset the flag
+    if (style.generated && !fileExists) {
+      console.log(`  - ⚠️ Generated flag set but file missing, regenerating...`);
+      style.generated = undefined;
+      style.tokensUsed = undefined;
     }
 
     // Generate the image
@@ -245,12 +313,14 @@ async function main() {
     if (generationResult) {
       const { imageData, usage } = generationResult;
 
-      // Save the image file
-      const fileName = `${style.id}.${IMAGE_EXTENSION}`;
+      // Detect the actual image type from the data
+      const detectedExtension = detectImageType(imageData);
+      const fileName = `${style.id}.${detectedExtension}`;
       const filePath = path.join(IMAGES_DIR, fileName);
+      
       try {
         await Deno.writeFile(filePath, imageData);
-        console.log(`  - 💾 Image saved successfully to: ${filePath}`);
+        console.log(`  - 💾 Image saved successfully to: ${filePath} (detected format: ${detectedExtension})`);
 
         // Update the style object in memory
         style.generated = new Date().toISOString();

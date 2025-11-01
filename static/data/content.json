@@ -246,7 +246,7 @@
       "usa": true,
       "info": "A generic placeholder for early 20th-century newspaper comic strips, inspired by the vibrant and varied styles of the era. No specific artist or work is referenced, allowing for creative interpretation within the public domain. EU: ✅ / USA: ✅",
       "stylePrompt": "In the style of an early 20th-century newspaper comic strip, featuring bold black ink outlines, minimal shading, and vibrant or monochromatic color schemes depending on the publication. Characters are expressive with exaggerated features like large eyes or exaggerated gestures, set against simple, hand-drawn backgrounds that emphasize humor or adventure. Use a grainy paper texture to evoke the feel of vintage newsprint.",
-      "generated": "2025-07-05T12:32:39.242Z",
+      "generated": "2025-07-06T07:12:07.849Z",
       "tokensUsed": null
     },
     {
@@ -687,6 +687,17 @@
       "info": "Visual symbols from the Akan people of Ghana that represent concepts or aphorisms. They are used extensively in fabrics, pottery, and logos. URL: https://en.wikipedia.org/wiki/Adinkra_symbols",
       "stylePrompt": "In the Adinkra printed fabric style, featuring repeating geometric symbols (e.g., spirals, knots) stamped in bold black ink on a woven, earth-toned cloth background (ochres, browns). Arrange symbols in rhythmic, grid-like patterns to convey cultural meanings, evoking a textured, handcrafted aesthetic with a focus on balance and symbolism.",
       "generated": "2025-07-05T12:41:42.068Z",
+      "tokensUsed": null
+    },
+    {
+      "id": "french_post_impressionist",
+      "style": "French Post-Impressionist Landscape",
+      "artist": "Various Artists",
+      "eu": true,
+      "usa": true,
+      "info": "The French post-impressionist movement of the late 19th to early 20th century, characterized by visible brushstrokes and vibrant naturalistic colors. Works from this period are in the public domain in both regions. URL: https://en.wikipedia.org/wiki/Post-Impressionism",
+      "stylePrompt": "In the French post-impressionist landscape style of the late 19th to early 20th century, characterized by short, visible brushstrokes and richly textured surfaces. Colors are vibrant yet naturalistic, with layered tones of green, gold, and blue conveying depth and warmth. The composition features rolling countryside with a central winding path, flanked by wildflowers and tall poplars, guiding the viewer's eye toward distant villages rendered in softened detail. Skies are expansive and luminous, painted in subtle gradients of cerulean and cloud white, evoking clarity and light. The overall aesthetic blends romantic rural nostalgia with a meticulous attention to atmospheric perspective and botanical variety.",
+      "generated": "2025-07-06T07:14:27.134Z",
       "tokensUsed": null
     }
   ],
