@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "help": "deno run help.ts",
+    "index": "deno run --allow-read --allow-write generate-index.ts",
+    "prompts": "deno run --allow-read --allow-write generate-prompt-files.ts",
+    "rss": "deno run --allow-read --allow-write generate-rss.ts",
+    "services": "deno run --allow-read --allow-write generate-services-files.ts",
+    "images": "deno run --allow-read --allow-write --allow-net --allow-env --allow-run generate_images.ts",
+    "update": "deno run --allow-read --allow-write --allow-run update.ts"
+  },
+  "imports": {
+    "std/": "https://deno.land/std@0.224.0/"
+  }
+}

@@ -1,11 +1,31 @@
-// deno run --allow-all generate-prompt-files.ts
 import { createTextFile } from "./utils.ts";
-import { prompts, KnownServices, services } from "./config.ts";
+import { KnownServices, prompts, services } from "./config.ts";
+
+const HELP = `
+This script generates individual HTML pages for each prompt defined in config.ts.
+
+When to use it:
+- When you have added, removed, or updated prompts in the 'prompts' array in config.ts.
+
+How to use it:
+- deno task prompts
+- deno run --allow-read --allow-write generate-prompt-files.ts
+
+What it does:
+- It iterates over the 'prompts' array in config.ts.
+- For each prompt, it generates an HTML file containing the prompt title, text, and associated images.
+- It also creates an index.html file in the 'prompts' directory that links to all the generated prompt pages.
+`;
+
+if (Deno.args.includes("--help")) {
+  console.log(HELP);
+  Deno.exit(0);
+}
 
 async function generateHTMLContent(
   promptTitle: string,
   promptText: string,
-  files: { service: KnownServices; url: string; comments?: string }[]
+  files: { service: KnownServices; url: string; comments?: string }[],
 ) {
   let fileHTML = "";
   files.forEach((file) => {
@@ -15,13 +35,11 @@ async function generateHTMLContent(
           <a href="../services/${file.service}.html">${file.service}</a>
         </h2>
         <div class="prompt-image">
-          <a href="${file.url}" target="_blank"><img src="${
-      file.url
-    }" alt="${promptTitle}" height="400px" /></a>
+          <a href="${file.url}" target="_blank"><img src="${file.url}" alt="${promptTitle}" height="400px" /></a>
         </div>
         ${
-          file.comments ? `<p class="prompt-comments">${file.comments}</p>` : ""
-        }
+      file.comments ? `<p class="prompt-comments">${file.comments}</p>` : ""
+    }
       </div>
       `;
   });
@@ -61,7 +79,7 @@ async function processPrompts() {
     const filename = await generateHTMLContent(
       prompt.title,
       prompt.prompt,
-      prompt.files
+      prompt.files,
     );
     return filename;
   });

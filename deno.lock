@@ -1,0 +1,9 @@
+{
+  "version": "5",
+  "redirects": {
+    "https://deno.land/std/fmt/colors.ts": "https://deno.land/std@0.224.0/fmt/colors.ts"
+  },
+  "remote": {
+    "https://deno.land/std@0.224.0/fmt/colors.ts": "508563c0659dd7198ba4bbf87e97f654af3c34eb56ba790260f252ad8012e1c5"
+  }
+}

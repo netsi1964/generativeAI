@@ -1,4 +1,26 @@
-// deno run --allow-all update.ts
+const HELP = `
+This script runs all the other generation scripts in the correct order to completely rebuild the website.
+
+When to use it:
+- When you want to regenerate the entire website after making changes.
+
+How to use it:
+- deno task update
+- deno run --allow-read --allow-write --allow-run update.ts
+
+What it does:
+- It executes the following scripts in order:
+  1. generate-prompt-files.ts
+  2. generate-services-files.ts
+  3. generate-rss.ts
+  4. generate-index.ts
+`;
+
+if (Deno.args.includes("--help")) {
+  console.log(HELP);
+  Deno.exit(0);
+}
+
 async function executeDenoScript(scriptPath: string) {
   const process = Deno.run({
     cmd: ["deno", "run", "--allow-read", "--allow-write", scriptPath],
