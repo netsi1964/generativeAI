@@ -95,9 +95,11 @@ class NetsiNavigation extends HTMLElement {
               <li><a href="${spaPrefix}#/service/chat.openai.com">Dall-e3 (chat.openai.com)</a></li>
               <li><a href="${spaPrefix}#/service/app.leonardo.ai">app.leonardo.ai</a></li>
               <li><a href="${spaPrefix}#/service/runwayml.com">runwayml.com</a></li>
-              <li><a href="${spaPrefix}#/service/playground.com">playground.com</a></li>
-              <li><a href="${spaPrefix}#/service/midjourney">midjourney</a></li>
-            </ul>
+             <li><a href="${spaPrefix}#/service/playground.com">playground.com</a></li>
+             <li><a href="${spaPrefix}#/service/midjourney">midjourney</a></li>
+              <li><a href="${spaPrefix}#/service/ChatGPTImage1.5">ChatGPTImage1.5</a></li>
+                          <li><a href="${spaPrefix}#/service/nanno-banana-pro">nanno-banana-pro</a></li>
+</ul>
           </li>
           <li tabindex="0">
             <a href="javascript:void(0)">Prompts ▼</a>

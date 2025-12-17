@@ -8,6 +8,7 @@ export enum KnownServices {
   "RUNWAYML_COM" = "runwayml.com",
   "PLAYGROUND_COM" = "playground.com",
   "MIDJOURNEY" = "midjourney",
+  "NANNO_BANANA_PRO" = "nanno-banana-pro",
 }
 
 export const services = [
@@ -47,7 +48,12 @@ export const services = [
   {
     service: KnownServices.CHATGPT_IMAGE_1_5,
     url: "https://chat.openai.com",
-    comments: "Placeholder entries for ChatGPT Image 1.5 to be replaced with real outputs.",
+    comments:
+      "Placeholder entries for ChatGPT Image 1.5 to be replaced with real outputs.",
+  },
+  {
+    service: KnownServices.NANNO_BANANA_PRO,
+    url: "https://nanno-banana-pro",
   },
 ];
 
@@ -99,7 +105,12 @@ export const prompts = [
         url: "../images/ChatGPTImage1.5/a-thai-woman.png",
         comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
-    ],
+          {
+        service: KnownServices.NANNO_BANANA_PRO,
+        url: "../images/nanno-banana-pro/a-thai-woman.png",
+        comments: "Placeholder for nanno-banana-pro output."
+      },
+],
   },
   {
     title: "Surreal Cityscape at Night",
@@ -139,7 +150,12 @@ export const prompts = [
         url: "../images/ChatGPTImage1.5/surreal-cityscape-at-night.png",
         comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
-    ],
+          {
+        service: KnownServices.NANNO_BANANA_PRO,
+        url: "../images/nanno-banana-pro/Surreal Cityscape at Night.png",
+        comments: "Placeholder for nanno-banana-pro output."
+      },
+],
   },
   {
     title: "The Awakening of an Ancient Forest",
@@ -179,7 +195,12 @@ export const prompts = [
         url: "../images/ChatGPTImage1.5/the-awakening-of-an-ancient-forest.png",
         comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
-    ],
+          {
+        service: KnownServices.NANNO_BANANA_PRO,
+        url: "../images/nanno-banana-pro/The Awakening of an Ancient Forest.png",
+        comments: "Placeholder for nanno-banana-pro output."
+      },
+],
   },
   {
     title: "The Melancholy of a Rainy Parisian Street",
@@ -188,42 +209,56 @@ export const prompts = [
     files: [
       {
         service: KnownServices.LEXICA_ART,
-        url: "../images/lexica.art/The Melancholy of a Rainy Parisian Street.jpg",
+        url:
+          "../images/lexica.art/The Melancholy of a Rainy Parisian Street.jpg",
       },
       {
         service: KnownServices.CLIPDROP_CO,
-        url: "../images/clipdrop.co/The Melancholy of a Rainy Parisian Street.png",
+        url:
+          "../images/clipdrop.co/The Melancholy of a Rainy Parisian Street.png",
       },
       {
         service: KnownServices.DALL_E_3,
-        url: "../images/dall_e_3/The Melancholy of a Rainy Parisian Street.webp",
+        url:
+          "../images/dall_e_3/The Melancholy of a Rainy Parisian Street.webp",
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
-        url: "../images/app.leonardo.ai/The Melancholy of a Rainy Parisian Street_alcamy_upscaler.jpg",
+        url:
+          "../images/app.leonardo.ai/The Melancholy of a Rainy Parisian Street_alcamy_upscaler.jpg",
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
-        url: "../images/app.leonardo.ai/The Melancholy of a Rainy Parisian Street_stable_diffusion_2.1.jpg",
+        url:
+          "../images/app.leonardo.ai/The Melancholy of a Rainy Parisian Street_stable_diffusion_2.1.jpg",
       },
       {
         service: KnownServices.RUNWAYML_COM,
-        url: "../images/runwayml.com/The Melancholy of a Rainy Parisian Street.jpg",
+        url:
+          "../images/runwayml.com/The Melancholy of a Rainy Parisian Street.jpg",
       },
       {
         service: KnownServices.PLAYGROUND_COM,
-        url: "../images/playground.com/The Melancholy of a Rainy Parisian Street.png",
+        url:
+          "../images/playground.com/The Melancholy of a Rainy Parisian Street.png",
       },
       {
         service: KnownServices.MIDJOURNEY,
-        url: "../images/midjourney/The Melancholy of a Rainy Parisian Street.png",
+        url:
+          "../images/midjourney/The Melancholy of a Rainy Parisian Street.png",
       },
       {
         service: KnownServices.CHATGPT_IMAGE_1_5,
-        url: "../images/ChatGPTImage1.5/the-melancholy-of-a-rainy-parisian-street.png",
+        url:
+          "../images/ChatGPTImage1.5/the-melancholy-of-a-rainy-parisian-street.png",
         comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
-    ],
+          {
+        service: KnownServices.NANNO_BANANA_PRO,
+        url: "../images/nanno-banana-pro/The Melancholy of a Rainy Parisian Street.png",
+        comments: "Placeholder for nanno-banana-pro output."
+      },
+],
   },
   {
     title: "Family Vacation Bliss in Thailand",
@@ -263,7 +298,12 @@ export const prompts = [
         url: "../images/ChatGPTImage1.5/family-vacation-bliss-in-thailand.png",
         comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
-    ],
+          {
+        service: KnownServices.NANNO_BANANA_PRO,
+        url: "../images/nanno-banana-pro/Family Vacation Bliss in Thailand.png",
+        comments: "Placeholder for nanno-banana-pro output."
+      },
+],
   },
   {
     title: "80s-Inspired 'Be Happy' Sticker with Thumbs-Up",
@@ -272,38 +312,51 @@ export const prompts = [
     files: [
       {
         service: KnownServices.LEXICA_ART,
-        url: "../images/lexica.art/80s-Inspired Be Happy Sticker with Thumbs-Up.jpg",
+        url:
+          "../images/lexica.art/80s-Inspired Be Happy Sticker with Thumbs-Up.jpg",
       },
       {
         service: KnownServices.CLIPDROP_CO,
-        url: "../images/clipdrop.co/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+        url:
+          "../images/clipdrop.co/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
       },
       {
         service: KnownServices.DALL_E_3,
-        url: "../images/dall_e_3/80s-Inspired Be Happy Sticker with Thumbs-Up.webp",
+        url:
+          "../images/dall_e_3/80s-Inspired Be Happy Sticker with Thumbs-Up.webp",
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
-        url: "../images/app.leonardo.ai/80s-Inspired Be Happy Sticker with Thumbs-Up.jpg",
+        url:
+          "../images/app.leonardo.ai/80s-Inspired Be Happy Sticker with Thumbs-Up.jpg",
       },
       {
         service: KnownServices.RUNWAYML_COM,
-        url: "../images/runwayml.com/80s-Inspired Be Happy Sticker with Thumbs-Up.jpg",
+        url:
+          "../images/runwayml.com/80s-Inspired Be Happy Sticker with Thumbs-Up.jpg",
       },
       {
         service: KnownServices.PLAYGROUND_COM,
-        url: "../images/playground.com/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+        url:
+          "../images/playground.com/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
       },
       {
         service: KnownServices.MIDJOURNEY,
-        url: "../images/midjourney/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+        url:
+          "../images/midjourney/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
       },
       {
         service: KnownServices.CHATGPT_IMAGE_1_5,
-        url: "../images/ChatGPTImage1.5/80s-inspired-be-happy-sticker-with-thumbs-up.png",
+        url:
+          "../images/ChatGPTImage1.5/80s-inspired-be-happy-sticker-with-thumbs-up.png",
         comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
-    ],
+          {
+        service: KnownServices.NANNO_BANANA_PRO,
+        url: "../images/nanno-banana-pro/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+        comments: "Placeholder for nanno-banana-pro output."
+      },
+],
   },
   {
     title: "A photograph of a vulture",
@@ -342,7 +395,12 @@ export const prompts = [
         url: "../images/ChatGPTImage1.5/a-photograph-of-a-vulture.png",
         comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
-    ],
+          {
+        service: KnownServices.NANNO_BANANA_PRO,
+        url: "../images/nanno-banana-pro/A photograph of a vulture.png",
+        comments: "Placeholder for nanno-banana-pro output."
+      },
+],
   },
   {
     title:
@@ -352,38 +410,51 @@ export const prompts = [
     files: [
       {
         service: KnownServices.LEXICA_ART,
-        url: "../images/lexica.art/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..jpg",
+        url:
+          "../images/lexica.art/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..jpg",
       },
       {
         service: KnownServices.CLIPDROP_CO,
-        url: "../images/clipdrop.co/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
+        url:
+          "../images/clipdrop.co/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
       },
       {
         service: KnownServices.DALL_E_3,
-        url: "../images/dall_e_3/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..webp",
+        url:
+          "../images/dall_e_3/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..webp",
       },
       {
         service: KnownServices.APP_LEONARDO_AI,
-        url: "../images/app.leonardo.ai/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..jpg",
+        url:
+          "../images/app.leonardo.ai/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..jpg",
       },
       {
         service: KnownServices.RUNWAYML_COM,
-        url: "../images/runwayml.com/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..jpg",
+        url:
+          "../images/runwayml.com/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..jpg",
       },
       {
         service: KnownServices.PLAYGROUND_COM,
-        url: "../images/playground.com/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
+        url:
+          "../images/playground.com/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
       },
       {
         service: KnownServices.MIDJOURNEY,
-        url: "../images/midjourney/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
+        url:
+          "../images/midjourney/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
       },
       {
         service: KnownServices.CHATGPT_IMAGE_1_5,
-        url: "../images/ChatGPTImage1.5/a-sketch-of-a-woman-standing-on-a-cliff-looking-at-the-sea-in-a-fancy-art-style.png",
+        url:
+          "../images/ChatGPTImage1.5/a-sketch-of-a-woman-standing-on-a-cliff-looking-at-the-sea-in-a-fancy-art-style.png",
         comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
-    ],
+          {
+        service: KnownServices.NANNO_BANANA_PRO,
+        url: "../images/nanno-banana-pro/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
+        comments: "Placeholder for nanno-banana-pro output."
+      },
+],
   },
   {
     title: "Hopeful Gaze in Coffee Tones",
@@ -423,6 +494,11 @@ export const prompts = [
         url: "../images/ChatGPTImage1.5/hopeful-gaze-in-coffee-tones.png",
         comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
-    ],
+          {
+        service: KnownServices.NANNO_BANANA_PRO,
+        url: "../images/nanno-banana-pro/Hopeful Gaze in Coffee Tones.png",
+        comments: "Placeholder for nanno-banana-pro output."
+      },
+],
   },
 ];
