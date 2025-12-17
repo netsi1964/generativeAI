@@ -10,8 +10,9 @@ body {
   padding: 12px;
   width: 100vw;
   height: 100vh;
-  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
-    source-sans-pro, sans-serif;
+  font-family:
+    Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro,
+    sans-serif;
   font-weight: 100;
 }
 h1,
@@ -45,10 +46,10 @@ netsi-prompts {
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 0;
+  padding: 1em;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
 }
 
 .prompt-text {
@@ -58,6 +59,8 @@ netsi-prompts {
   max-width: 80%;
   border-radius: calc(2 * var(--spacer));
   user-select: all;
+  height: 50%;
+  overflow: auto;
 }
 
 .prompt-image {
