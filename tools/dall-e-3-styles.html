@@ -29,13 +29,15 @@
     </style>
   </head>
   <body>
-    <h2><a href="/generativeAI">🏠 home</a> &gt; Tools</h2>
+    <netsi-navigation></netsi-navigation>
+    <main>
+      <h2><a href="/generativeAI">🏠 home</a> &gt; Tools</h2>
 
-    <h1>Dall-E 3 styles</h1>
-    <div class="split">
-      <div>
-        Here is a list of <span id="eleEntries"></span> styles which can be seen
-        in the
+      <h1>Dall-E 3 styles</h1>
+      <div class="split">
+        <div>
+          Here is a list of <span id="eleEntries"></span> styles which can be seen
+          in the
         <a href="https://chat.openai.com/g/g-2fkFE8rbu-dall-e">Dall-E 3 GPT</a
         >.<br />
         When typing your prompt in Dall-E 3, there is a button you can click to
@@ -48,9 +50,11 @@
       <div id="styles"></div>
     </div>
 
-    <hr />
+      <hr />
 
-    <a href="/generativeAI">🏠 home</a>
+      <a href="/generativeAI">🏠 home</a>
+    </main>
+    <script type="module" src="../static/components/netsi-navigation.js"></script>
     <script>
       let html = "";
       let entries = Object.entries(dallE3Styles);

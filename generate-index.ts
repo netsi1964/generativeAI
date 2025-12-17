@@ -62,14 +62,18 @@ async function generateIndexContent() {
       <link rel="alternate" type="application/rss+xml" title="Examples of generated images" href="rss-feed.xml" />
     </head>
     <body>
-      <h1>Example of generated images</h1>
-      ${promptsListHTML}
-      ${servicesListHTML}
-      
-      <h3>Tools</h3>
-      <ul>
-      <li><a href="tools/prompt-composition-tool.html">Prompt composition tool</a></li>
-      <ul>
+      <netsi-navigation></netsi-navigation>
+      <main>
+        <h1>Example of generated images</h1>
+        ${promptsListHTML}
+        ${servicesListHTML}
+        
+        <h3>Tools</h3>
+        <ul>
+        <li><a href="tools/prompt-composition-tool.html">Prompt composition tool</a></li>
+        <ul>
+      </main>
+      <script type="module" src="static/components/netsi-navigation.js"></script>
     </body>
   </html>
   `;

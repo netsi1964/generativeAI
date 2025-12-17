@@ -1,7 +1,13 @@
 class NetsiNavigation extends HTMLElement {
   connectedCallback() {
-    const spaPrefix = '/index.html';
-    const promptToolPath = '/tools/prompt-composition-tool.html';
+    const repoName = 'generativeAI';
+    const pathSegments = window.location.pathname.split('/').filter(Boolean);
+    const basePath =
+      pathSegments.length > 0 && pathSegments[0] === repoName
+        ? `/${repoName}`
+        : '';
+    const spaPrefix = `${basePath || ''}/index.html`;
+    const promptToolPath = `${basePath || ''}/tools/prompt-composition-tool.html`;
 
     this.innerHTML = `
       <style>

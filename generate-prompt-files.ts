@@ -52,17 +52,21 @@ async function generateHTMLContent(
       <link rel="stylesheet" href="../style.css" />
     </head>
     <body>
-      <h2>
-        <a href="/generativeAI">🏠 home</a> &gt;
-        <a href="index.html">Generated images</a>
-      </h2>
-      <h2 class="prompt-title">${promptTitle}</h2>
-      <pre class="prompt-text">${promptText}</pre>
-      <div class="prompts">
-        ${fileHTML}
-      </div>
-      <hr />
-      <a href="/generativeAI">🏠 home</a>
+      <netsi-navigation></netsi-navigation>
+      <main>
+        <h2>
+          <a href="/generativeAI">🏠 home</a> &gt;
+          <a href="index.html">Generated images</a>
+        </h2>
+        <h2 class="prompt-title">${promptTitle}</h2>
+        <pre class="prompt-text">${promptText}</pre>
+        <div class="prompts">
+          ${fileHTML}
+        </div>
+        <hr />
+        <a href="/generativeAI">🏠 home</a>
+      </main>
+      <script type="module" src="../static/components/netsi-navigation.js"></script>
     </body>
   </html>
   `;
@@ -97,8 +101,10 @@ async function createIndexPage(filenames: string[]) {
         <link rel="stylesheet" href="../style.css">
       </head>
       <body>
-        <h1>Generated images</h1>
-        <ul>
+        <netsi-navigation></netsi-navigation>
+        <main>
+          <h1>Generated images</h1>
+          <ul>
   `;
 
   filenames.forEach((filename) => {
@@ -107,11 +113,13 @@ async function createIndexPage(filenames: string[]) {
     }</a></li>`;
   });
 
-  indexHTML += `
-        </ul>
-        <h2><a href="tips.html">Some shared prompt techniques</a></h2>
-        <hr>
-        <a href="/generativeAI">🏠 home</a>
+      indexHTML += `
+          </ul>
+          <h2><a href="tips.html">Some shared prompt techniques</a></h2>
+          <hr>
+          <a href="/generativeAI">🏠 home</a>
+        </main>
+        <script type="module" src="../static/components/netsi-navigation.js"></script>
       </body>
     </html>
   `;

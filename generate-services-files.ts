@@ -53,7 +53,7 @@ async function generateServicePage(
       )
       .join("");
   });
-  const servicePageContent = `
+const servicePageContent = `
   <!DOCTYPE html>
   <html>
   <head>
@@ -61,19 +61,23 @@ async function generateServicePage(
     <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <h2><a href="/generativeAI">🏠 home</a> &gt; <a href="index.html">Services</a> &gt; <a href="${service?.url}">${serviceName}</a>🔗</h2>
-    ${await getTips(serviceName)}
-    <p>Here are some example generated prompts from ${serviceName} service.</p>
-    ${
+    <netsi-navigation></netsi-navigation>
+    <main>
+      <h2><a href="/generativeAI">🏠 home</a> &gt; <a href="index.html">Services</a> &gt; <a href="${service?.url}">${serviceName}</a>🔗</h2>
+      ${await getTips(serviceName)}
+      <p>Here are some example generated prompts from ${serviceName} service.</p>
+      ${
     service?.comments
       ? `<blockquote class="service-comment">${service?.comments}</blockquote>`
       : ""
   }
-    <div class="prompts">
-    ${imageHTML}
-    </div>
-    <hr>
-    <a href="/generativeAI">🏠 home</a> - <a href="index.html">Services</a>
+      <div class="prompts">
+      ${imageHTML}
+      </div>
+      <hr>
+      <a href="/generativeAI">🏠 home</a> - <a href="index.html">Services</a>
+    </main>
+    <script type="module" src="../static/components/netsi-navigation.js"></script>
   </body>
   </html>
   `;
@@ -92,8 +96,10 @@ let indexHTML = `
     <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <h1>Services</h1>
-    <ul>`;
+    <netsi-navigation></netsi-navigation>
+    <main>
+      <h1>Services</h1>
+      <ul>`;
 
 async function processServices() {
   const promises = Object.values(KnownServices).map(async (service) => {
@@ -110,8 +116,10 @@ async function processServices() {
 // Call the async function
 processServices().then(async () => {
   indexHTML += `</ul>
-    <hr>
-    <a href="/generativeAI">🏠 home</a>
+      <hr>
+      <a href="/generativeAI">🏠 home</a>
+    </main>
+    <script type="module" src="../static/components/netsi-navigation.js"></script>
       </body>
       </html>
     `;
