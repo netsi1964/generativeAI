@@ -3,6 +3,7 @@ export enum KnownServices {
   "LEXICA_ART" = "lexica.art",
   "CLIPDROP_CO" = "clipdrop.co",
   "DALL_E_3" = "chat.openai.com",
+  "CHATGPT_IMAGE_1_5" = "ChatGPTImage1.5",
   "APP_LEONARDO_AI" = "app.leonardo.ai",
   "RUNWAYML_COM" = "runwayml.com",
   "PLAYGROUND_COM" = "playground.com",
@@ -42,6 +43,11 @@ export const services = [
     service: KnownServices.MIDJOURNEY,
     url: "https://www.midjourney.com",
     comments: "Feburary 2024 use Discord to generate images",
+  },
+  {
+    service: KnownServices.CHATGPT_IMAGE_1_5,
+    url: "https://chat.openai.com",
+    comments: "Placeholder entries for ChatGPT Image 1.5 to be replaced with real outputs.",
   },
 ];
 
@@ -88,6 +94,11 @@ export const prompts = [
         service: KnownServices.MIDJOURNEY,
         url: "../images/midjourney/a-thai-woman.jpg",
       },
+      {
+        service: KnownServices.CHATGPT_IMAGE_1_5,
+        url: "../images/ChatGPTImage1.5/a-thai-woman.png",
+        comments: "Placeholder for ChatGPT Image 1.5 output.",
+      },
     ],
   },
   {
@@ -123,6 +134,11 @@ export const prompts = [
         service: KnownServices.MIDJOURNEY,
         url: "../images/midjourney/Surreal Cityscape at Night.png",
       },
+      {
+        service: KnownServices.CHATGPT_IMAGE_1_5,
+        url: "../images/ChatGPTImage1.5/surreal-cityscape-at-night.png",
+        comments: "Placeholder for ChatGPT Image 1.5 output.",
+      },
     ],
   },
   {
@@ -157,6 +173,11 @@ export const prompts = [
       {
         service: KnownServices.MIDJOURNEY,
         url: "../images/midjourney/The Awakening of an Ancient Forest.png",
+      },
+      {
+        service: KnownServices.CHATGPT_IMAGE_1_5,
+        url: "../images/ChatGPTImage1.5/the-awakening-of-an-ancient-forest.png",
+        comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
     ],
   },
@@ -197,6 +218,11 @@ export const prompts = [
         service: KnownServices.MIDJOURNEY,
         url: "../images/midjourney/The Melancholy of a Rainy Parisian Street.png",
       },
+      {
+        service: KnownServices.CHATGPT_IMAGE_1_5,
+        url: "../images/ChatGPTImage1.5/the-melancholy-of-a-rainy-parisian-street.png",
+        comments: "Placeholder for ChatGPT Image 1.5 output.",
+      },
     ],
   },
   {
@@ -231,6 +257,11 @@ export const prompts = [
       {
         service: KnownServices.MIDJOURNEY,
         url: "../images/midjourney/Family Vacation Bliss in Thailand.png",
+      },
+      {
+        service: KnownServices.CHATGPT_IMAGE_1_5,
+        url: "../images/ChatGPTImage1.5/family-vacation-bliss-in-thailand.png",
+        comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
     ],
   },
@@ -267,6 +298,11 @@ export const prompts = [
         service: KnownServices.MIDJOURNEY,
         url: "../images/midjourney/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
       },
+      {
+        service: KnownServices.CHATGPT_IMAGE_1_5,
+        url: "../images/ChatGPTImage1.5/80s-inspired-be-happy-sticker-with-thumbs-up.png",
+        comments: "Placeholder for ChatGPT Image 1.5 output.",
+      },
     ],
   },
   {
@@ -300,6 +336,11 @@ export const prompts = [
       {
         service: KnownServices.MIDJOURNEY,
         url: "../images/midjourney/A photograph of a vulture.png",
+      },
+      {
+        service: KnownServices.CHATGPT_IMAGE_1_5,
+        url: "../images/ChatGPTImage1.5/a-photograph-of-a-vulture.png",
+        comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
     ],
   },
@@ -337,6 +378,11 @@ export const prompts = [
         service: KnownServices.MIDJOURNEY,
         url: "../images/midjourney/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
       },
+      {
+        service: KnownServices.CHATGPT_IMAGE_1_5,
+        url: "../images/ChatGPTImage1.5/a-sketch-of-a-woman-standing-on-a-cliff-looking-at-the-sea-in-a-fancy-art-style.png",
+        comments: "Placeholder for ChatGPT Image 1.5 output.",
+      },
     ],
   },
   {
@@ -371,6 +417,11 @@ export const prompts = [
       {
         service: KnownServices.MIDJOURNEY,
         url: "../images/midjourney/Hopeful Gaze in Coffee Tones.png",
+      },
+      {
+        service: KnownServices.CHATGPT_IMAGE_1_5,
+        url: "../images/ChatGPTImage1.5/hopeful-gaze-in-coffee-tones.png",
+        comments: "Placeholder for ChatGPT Image 1.5 output.",
       },
     ],
   },
