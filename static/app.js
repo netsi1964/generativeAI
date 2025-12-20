@@ -263,6 +263,7 @@ function renderPrompt(promptId) {
         prompt="${promptText.replace(/"/g, '&quot;')}"
         alt="${prompt.title}"
         data-large
+        hide-prompt
       ></netsi-prompt>
     `;
   }).join('');
