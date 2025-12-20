@@ -1,5 +1,5 @@
-const root = document.getElementById('spa-root');
-const nav = document.getElementById('main-nav');
+let root = null;
+let nav = null;
 let content = null;
 
 async function loadContent() {
@@ -278,6 +278,15 @@ function renderPrompt(promptId) {
 }
 
 async function router() {
+  // Ensure DOM elements exist
+  if (!root) root = document.getElementById('spa-root');
+  if (!nav) nav = document.getElementById('main-nav');
+  
+  if (!root || !nav) {
+    console.error('SPA elements not found: spa-root or main-nav');
+    return;
+  }
+  
   await loadContent();
   renderNav();
   const path = window.location.hash.slice(1) || '/';
@@ -299,5 +308,12 @@ async function router() {
   }
 }
 
-router();
+// Wait for DOM to be ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    router();
+  });
+} else {
+  router();
+}
 window.addEventListener('hashchange', router);
