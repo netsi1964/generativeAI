@@ -8,7 +8,8 @@
     "images": "deno run --allow-read --allow-write --allow-net --allow-env --allow-run generate_images.ts",
     "update": "deno run --allow-read --allow-write --allow-run update.ts",
     "run-all": "deno task prompts && deno task services && deno task index",
-    "add-service": "deno run --allow-read --allow-write scripts/add-service.ts"
+    "add-service": "deno run --allow-read --allow-write scripts/add-service.ts",
+    "serve": "deno run --allow-net --allow-read https://deno.land/std@0.224.0/http/file_server.ts --port 8000"
   },
   "imports": {
     "std/": "https://deno.land/std@0.224.0/"

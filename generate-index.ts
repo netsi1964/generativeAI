@@ -60,20 +60,58 @@ async function generateIndexContent() {
       <title>Example of generated images</title>
       <link rel="stylesheet" href="style.css" />
       <link rel="alternate" type="application/rss+xml" title="Examples of generated images" href="rss-feed.xml" />
+      <script type="module" src="static/components/netsi-prompt.js"></script>
+      <script type="module" src="static/components/netsi-prompts.js"></script>
     </head>
     <body>
       <netsi-navigation></netsi-navigation>
+      <nav id="main-nav"></nav>
       <main>
-        <h1>Example of generated images</h1>
-        ${promptsListHTML}
-        ${servicesListHTML}
-        
-        <h3>Tools</h3>
-        <ul>
-        <li><a href="tools/prompt-composition-tool.html">Prompt composition tool</a></li>
-        <ul>
+        <div id="spa-root">
+          <h1>Example of generated images</h1>
+          ${promptsListHTML}
+          ${servicesListHTML}
+          
+          <h3>Tools</h3>
+          <ul>
+          <li><a href="tools/prompt-composition-tool.html">Prompt composition tool</a></li>
+          <ul>
+        </div>
       </main>
+
+      <!-- SPA Templates -->
+      <template id="service-template">
+        <div>
+          <h1 class="service-title"></h1>
+          <p class="service-description"></p>
+          <netsi-prompts></netsi-prompts>
+        </div>
+      </template>
+
+      <template id="tips-template">
+        <div>
+          <h1>Tips</h1>
+          <div class="tips-list"></div>
+        </div>
+      </template>
+
+      <template id="tools-template">
+        <div>
+          <h1>Tools</h1>
+          <div class="tools-list"></div>
+        </div>
+      </template>
+
+      <template id="styles-template">
+        <div>
+          <h1>Styles</h1>
+          <p class="disclaimer"></p>
+          <netsi-prompts></netsi-prompts>
+        </div>
+      </template>
+
       <script type="module" src="static/components/netsi-navigation.js"></script>
+      <script type="module" src="static/app.js"></script>
     </body>
   </html>
   `;
