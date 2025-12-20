@@ -64,7 +64,6 @@ async function generateIndexContent() {
       <script type="module" src="static/components/netsi-prompts.js"></script>
     </head>
     <body>
-      <netsi-navigation></netsi-navigation>
       <nav id="main-nav"></nav>
       <main>
         <div id="spa-root">
@@ -110,7 +109,6 @@ async function generateIndexContent() {
         </div>
       </template>
 
-      <script type="module" src="static/components/netsi-navigation.js"></script>
       <script type="module" src="static/app.js"></script>
     </body>
   </html>
