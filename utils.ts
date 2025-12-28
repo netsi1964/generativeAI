@@ -4,8 +4,8 @@ export async function createTextFile(filePath: string, text: string) {
   try {
     try {
       await Deno.remove(filePath);
-    } catch (error) {
-      console.info("Failed to remove file:", error);
+    } catch (_error) {
+      // File doesn't exist, which is fine - we'll create it
     }
     await Deno.writeTextFile(filePath, text, { create: true });
     console.log(`File created at ${filePath}`);

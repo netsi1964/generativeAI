@@ -9,6 +9,7 @@ export enum KnownServices {
   "PLAYGROUND_COM" = "playground.com",
   "MIDJOURNEY" = "midjourney",
   "NANNO_BANANA_PRO" = "nanno-banana-pro",
+  "GROK_4" = "grok-4",
 }
 
 export const services = [
@@ -54,6 +55,16 @@ export const services = [
   {
     service: KnownServices.NANNO_BANANA_PRO,
     url: "https://nanno-banana-pro",
+  },
+      {
+        service: KnownServices.GROK_4,
+        url: "https://grok-4",
+        comments: "Placeholder for grok-4 output."
+      },
+  {
+    service: KnownServices.GROK_4,
+    url: "https://api.x.ai/v1",
+    comments: "Uses OpenAI-compatible API with model 'grok-2-image'",
   },
 ];
 
@@ -110,6 +121,16 @@ export const prompts = [
         url: "../images/nanno-banana-pro/a-thai-woman.png",
         comments: "Placeholder for nanno-banana-pro output."
       },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/a-thai-woman.png",
+        comments: "Placeholder for grok-4 output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/a-thai-woman.png",
+        comments: "Placeholder for grok-4 output."
+      },
 ],
   },
   {
@@ -155,6 +176,16 @@ export const prompts = [
         url: "../images/nanno-banana-pro/Surreal Cityscape at Night.png",
         comments: "Placeholder for nanno-banana-pro output."
       },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/Surreal Cityscape at Night.png",
+        comments: "Placeholder for grok-4 output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/Surreal Cityscape at Night.png",
+        comments: "Placeholder for grok-4 output."
+      },
 ],
   },
   {
@@ -199,6 +230,16 @@ export const prompts = [
         service: KnownServices.NANNO_BANANA_PRO,
         url: "../images/nanno-banana-pro/The Awakening of an Ancient Forest.png",
         comments: "Placeholder for nanno-banana-pro output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/The Awakening of an Ancient Forest.png",
+        comments: "Placeholder for grok-4 output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/The Awakening of an Ancient Forest.png",
+        comments: "Placeholder for grok-4 output."
       },
 ],
   },
@@ -258,6 +299,16 @@ export const prompts = [
         url: "../images/nanno-banana-pro/The Melancholy of a Rainy Parisian Street.png",
         comments: "Placeholder for nanno-banana-pro output."
       },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/The Melancholy of a Rainy Parisian Street.png",
+        comments: "Placeholder for grok-4 output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/The Melancholy of a Rainy Parisian Street.png",
+        comments: "Placeholder for grok-4 output."
+      },
 ],
   },
   {
@@ -302,6 +353,16 @@ export const prompts = [
         service: KnownServices.NANNO_BANANA_PRO,
         url: "../images/nanno-banana-pro/Family Vacation Bliss in Thailand.png",
         comments: "Placeholder for nanno-banana-pro output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/Family Vacation Bliss in Thailand.png",
+        comments: "Placeholder for grok-4 output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/Family Vacation Bliss in Thailand.png",
+        comments: "Placeholder for grok-4 output."
       },
 ],
   },
@@ -356,6 +417,16 @@ export const prompts = [
         url: "../images/nanno-banana-pro/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
         comments: "Placeholder for nanno-banana-pro output."
       },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+        comments: "Placeholder for grok-4 output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/80s-Inspired Be Happy Sticker with Thumbs-Up.png",
+        comments: "Placeholder for grok-4 output."
+      },
 ],
   },
   {
@@ -399,6 +470,16 @@ export const prompts = [
         service: KnownServices.NANNO_BANANA_PRO,
         url: "../images/nanno-banana-pro/A photograph of a vulture.png",
         comments: "Placeholder for nanno-banana-pro output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/A photograph of a vulture.png",
+        comments: "Placeholder for grok-4 output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/A photograph of a vulture.png",
+        comments: "Placeholder for grok-4 output."
       },
 ],
   },
@@ -454,6 +535,16 @@ export const prompts = [
         url: "../images/nanno-banana-pro/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
         comments: "Placeholder for nanno-banana-pro output."
       },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
+        comments: "Placeholder for grok-4 output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/A sketch of a woman standing on a cliff looking at the sea in a fancy art style..png",
+        comments: "Placeholder for grok-4 output."
+      },
 ],
   },
   {
@@ -498,6 +589,16 @@ export const prompts = [
         service: KnownServices.NANNO_BANANA_PRO,
         url: "../images/nanno-banana-pro/Hopeful Gaze in Coffee Tones.png",
         comments: "Placeholder for nanno-banana-pro output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/Hopeful Gaze in Coffee Tones.png",
+        comments: "Placeholder for grok-4 output."
+      },
+      {
+        service: KnownServices.GROK_4,
+        url: "../images/grok-4/Hopeful Gaze in Coffee Tones.png",
+        comments: "Placeholder for grok-4 output."
       },
 ],
   },

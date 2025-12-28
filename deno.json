@@ -6,6 +6,7 @@
     "rss": "deno run --allow-read --allow-write generate-rss.ts",
     "services": "deno run --allow-read --allow-write generate-services-files.ts",
     "images": "deno run --allow-read --allow-write --allow-net --allow-env --allow-run generate_images.ts",
+    "grok-images": "deno run --allow-read --allow-write --allow-net --allow-env generate-grok-images.ts",
     "update": "deno run --allow-read --allow-write --allow-run update.ts",
     "run-all": "deno task prompts && deno task services && deno task index",
     "add-service": "deno run --allow-read --allow-write scripts/add-service.ts",
