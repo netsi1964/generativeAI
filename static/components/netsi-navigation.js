@@ -88,6 +88,7 @@ class NetsiNavigation extends HTMLElement {
             <a href="javascript:void(0)">Services ▼</a>
             <ul class="dropdown">
               <li><a href="${spaPrefix}#/service/grok3">Grok 3</a></li>
+              <li><a href="${spaPrefix}#/service/grok-4">Grok 4</a></li>
               <li><a href="${spaPrefix}#/service/gpt4o">GPT-4o</a></li>
               <li><a href="${spaPrefix}#/service/imagen30">Google Imagen 3.0</a></li>
               <li><a href="${spaPrefix}#/service/lexica.art">lexica.art</a></li>

@@ -179,6 +179,24 @@
         "sketch-woman-cliff.png",
         "hopeful-coffee.png"
       ]
+    },
+    {
+      "id": "grok-4",
+      "name": "Grok 4",
+      "description": "Here are some example generated prompts using Grok 4 via X.AI API.",
+      "url": "https://api.x.ai/v1",
+      "imageFolder": "/generativeAI/images/grok-4/",
+      "prompts": [
+        "be-happy.png",
+        "thai-woman.png",
+        "cityscape-night.png",
+        "awakening-forest.png",
+        "melancholy-paris.png",
+        "family-thailand.png",
+        "vulture-photo.png",
+        "sketch-woman-cliff.png",
+        "hopeful-coffee.png"
+      ]
     }
   ],
   "prompts": [
