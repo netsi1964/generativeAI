@@ -39,6 +39,23 @@ To normalize filenames after syncing new assets, run `node scripts/cat-image-fil
 3. Update prompts/services/Imagen styles as needed.
 4. Run the relevant Deno tasks (`prompts`, `services`, `index`, `rss`, `images`) and commit the regenerated HTML/JSON/assets.
 
+## Available Deno Tasks
+
+The project exposes the following tasks via `deno.json`:
+
+- **`help`** – Displays inline help documentation for the project's scripts and workflow.
+- **`index`** – Regenerates the site landing page (`index.html`) with up-to-date prompt and service listings.
+- **`prompts`** – Generates `prompts/*.html` (one page per prompt with thumbnails and deep links to raw images).
+- **`services`** – Generates `services/*.html` (one page per service, aggregating all prompts and injecting provider-specific tips).
+- **`rss`** – Regenerates `rss-feed.xml` to keep RSS syndication current.
+- **`images`** – Calls Google Vertex AI's Imagen model to fetch new image outputs; requires `GCP_PROJECT_ID`, `GCP_LOCATION`, and Google Cloud credentials in environment variables.
+- **`update`** – Runs update logic (e.g., normalizing assets or refreshing metadata).
+- **`run-all`** – Convenience task that chains `deno task prompts && deno task services && deno task index` to regenerate the full site in one go.
+- **`add-service`** – Interactive script to onboard a new image generation service (adds metadata to `config.ts` and scaffolds the folder structure).
+- **`serve`** – Starts a local HTTP server on port 8000 to preview the site during development.
+
+Run any task with `deno task <task-name>`. Use `deno task help` or check individual script files for additional command-line options.
+
 ## Plan for future enhancements
 
 1. **Add more curated prompts and outputs**
